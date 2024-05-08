@@ -1,0 +1,2197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISO Dashboard</title>
+    <link rel="shortcut icon" href="OIP.jfif" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.0.2.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dark-theme">
+    <!-- Slider Items -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <section class="container-fluid card-p">
+            <div class="row">
+              <div class="col-md-4">
+                <div
+                  class="card card-wrapper"
+                  style="height: 93vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <img src="1.png" alt="" style="height: 100%" />
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div
+                      class="card card-wrapper"
+                      style="height: 30vh"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h6>Vehicle Sticker</h6>
+                      <div
+                        class="swiper2 mySwiper mt-2"
+                        style="background: transparent"
+                      >
+                        <div
+                          class="swiper-wrapper"
+                          style="background: transparent"
+                        >
+                          <div
+                            class="swiper-slide"
+                            style="background: transparent"
+                          >
+                            <img src="./saudi-white-number-plate.png" alt="" />
+                          </div>
+                          <div
+                            class="swiper-slide"
+                            style="background: transparent"
+                          >
+                            <img src="./saudi-white-number-plate.png" alt="" />
+                          </div>
+                          <div
+                            class="swiper-slide"
+                            style="background: transparent"
+                          >
+                            <img src="./saudi-white-number-plate.png" alt="" />
+                          </div>
+                          <div
+                            class="swiper-slide"
+                            style="background: transparent"
+                          >
+                            <img src="./saudi-white-number-plate.png" alt="" />
+                          </div>
+                          <div
+                            class="swiper-slide"
+                            style="background: transparent"
+                          >
+                            <img src="./saudi-white-number-plate.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <a
+                        href="./blank.html"
+                        class="btn rounded-pill btn-primary sub-btn"
+                        >Submit Request</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="card card-wrapper"
+                      style="height: 30vh"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <img src="my.png" alt="" style="height: 100%" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="card card-wrapper mt-3"
+                      style="height: 30vh"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h5>My Access</h5>
+                      <h6>6</h6>
+                      <p>Request</p>
+                      <a
+                        href="./blank.html"
+                        class="btn rounded-pill btn-primary sub-btn"
+                        >Submit Request</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="card card-wrapper mt-3"
+                      style="height: 30vh"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h5>VMS</h5>
+                      <h6>2</h6>
+                      <p>Request</p>
+                      <a
+                        href="./blank.html"
+                        class="btn rounded-pill btn-primary sub-btn"
+                        >Submit Request</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="card card-wrapper mt-3"
+                      style="height: 30vh"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h5>Unsafe Practices</h5>
+                      <h6>0</h6>
+                      <p>Trafic Violation</p>
+                      <a
+                        href="./blank.html"
+                        class="btn rounded-pill btn-primary sub-btn"
+                        >Submit Request</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="card card-wrapper mt-3"
+                      style="height: 30vh"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h5>Digital Stickers</h5>
+                      <h6>0</h6>
+                      <p>Requesters</p>
+                      <a
+                        href="./blank.html"
+                        class="btn rounded-pill btn-primary sub-btn"
+                        >Submit Request</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="container-fluid card-p">
+            <div class="row">
+              <div class="col-md-4">
+                <div
+                  class="card card-wrapper p-5"
+                  style="height: 45vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h5>Violation By Employee Type</h5>
+                  <canvas class="Chart1 mt-2"></canvas>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div
+                  class="card card-wrapper p-5"
+                  style="height: 45vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h5>2023/2024 Weekly Violations Statistics Org</h5>
+                  <canvas class="Chart2 mt-2"></canvas>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div
+                  class="card card-wrapper p-5 mt-4"
+                  style="height: 47vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h5>Violations By Childern Orgs</h5>
+                  <canvas class="Chart3 mt-2"></canvas>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="container-fluid card-p">
+            <div class="row">
+              <div class="col-md-6">
+                <div
+                  class="card card-wrapper p-5"
+                  style="height: 45vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h5>Violation By Employee Type</h5>
+                  <canvas class="Chart4 mt-2"></canvas>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="card card-wrapper p-5"
+                  style="height: 45vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h5>2023/2024 Weekly Violations Statistics Org</h5>
+                  <canvas class="Chart5 mt-2"></canvas>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="card card-wrapper p-5 mt-4"
+                  style="height: 47vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h5>Violations By Childern Orgs</h5>
+                  <canvas class="Chart6 mt-2"></canvas>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="card card-wrapper p-5 mt-4"
+                  style="height: 47vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h5>Violations By Childern Orgs</h5>
+                  <canvas class="Chart7 mt-2"></canvas>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="container-fluid card-p">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div
+                      class="card card-wrapper p-4"
+                      style="height: 45vh"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h1 class="left-h1">1260</h1>
+                      <h5 class="left-h5">Authorize Employees</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="card card-wrapper p-5"
+                      style="height: 45vh"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h5>Plant Access by Type</h5>
+                      <canvas class="Chart8 mt-2"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div
+                      class="card card-wrapper chart-img p-4 mt-4"
+                      style="height: 47vh"
+                    >
+                      <img src="id.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div
+                      class="card card-wrapper chart-img p-4 mt-4"
+                      style="height: 47vh"
+                    >
+                      <img src="id.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div
+                      class="card card-wrapper chart-img p-4 mt-4"
+                      style="height: 47vh"
+                    >
+                      <img src="id.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="card card-wrapper p-4" style="height: 30vh">
+                          <h3>1,001</h3>
+                          <p>currently in</p>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div
+                          class="card card-wrapper p-4 mt-3"
+                          style="height: 30vh"
+                        >
+                          <h5>Top Aramco Dept.</h5>
+                          <h6 class="mt-1">Industrial Security Support</h6>
+                          <h6 class="mt-1">
+                            Industrial Security Operation <br />
+                            Fire Protection
+                          </h6>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div
+                          class="card card-wrapper p-4 mt-3"
+                          style="height: 30vh"
+                        >
+                          <h5>120</h5>
+                          <h6 class="mt-1">VMX</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="card card-wrapper p-4" style="height: 30vh">
+                          <h6>Plant Access by Type</h6>
+                          <canvas id="Chart9"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div
+                          class="card card-wrapper p-4 mt-3"
+                          style="height: 30vh"
+                        >
+                          <h5>Top Contractor</h5>
+                          <h6 class="mt-1">Al Zamil co.</h6>
+                          <h6 class="mt-1">Al Hajri co.</h6>
+                          <h6 class="mt-1">York co.</h6>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div
+                          class="card card-wrapper p-4 mt-3"
+                          style="height: 30vh"
+                        >
+                          <h5>155</h5>
+                          <h6 class="mt-1">MGPS</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="container-fluid card-p">
+            <div class="row">
+              <div class="col-md-6">
+                <div
+                  class="card card-wrapper"
+                  style="height: 94vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <div
+                    id="slide04-1"
+                    class="chart"
+                    style="height: 100%; width: 100%"
+                  >
+                    <canvas class="chart canvas1"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="card card-wrapper p-4" style="height: 30vh">
+                          <h5>1,001</h5>
+                          <h6 class="mt-1">currently in</h6>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div
+                          class="card card-wrapper p-4 mt-3"
+                          style="height: 30vh"
+                        >
+                          <h5>Top Aramco Dept.</h5>
+                          <h6 class="mt-1">Industrial Security Support</h6>
+                          <h6 class="mt-1">
+                            Industrial Security Operation <br />
+                            Fire Protection
+                          </h6>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div
+                          class="card card-wrapper p-4 mt-3"
+                          style="height: 30vh"
+                        >
+                          <h3>120</h3>
+                          <h6 class="mt-1">VMX</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="card card-wrapper p-5" style="height: 30vh">
+                          <h5>Plant Access by Type</h5>
+                          <canvas class="Chart10 mt-2"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div
+                          class="card card-wrapper p-4 mt-3"
+                          style="height: 30vh"
+                        >
+                          <h5>Top Contractor</h5>
+                          <h6 class="mt-1">Al Zamil co.</h6>
+                          <h6 class="mt-1">Al Hajri co.</h6>
+                          <h6 class="mt-1">York co.</h6>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div
+                          class="card card-wrapper p-4 mt-3"
+                          style="height: 30vh"
+                        >
+                          <h5>155</h5>
+                          <h6 class="mt-1">MGPS</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="container-fluid card-p">
+            <div class="row">
+              <div class="col-12">
+                <div
+                  class="card card-wrapper p-4"
+                  style="height: 94vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <div
+                    id="slide05"
+                    class="chart"
+                    style="height: 100%; width: 100%"
+                  >
+                    <canvas class="chart canvas"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="container-fluid card-p">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="row">
+                  <div class="col-12">
+                    <div
+                      class="card card-wrapper p-5"
+                      style="height: 45vh"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <canvas class="Chart11"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div
+                      class="card card-wrapper p-5 mt-3"
+                      style="height: 47vh"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h6>Unexecuted Approved Gate passes</h6>
+                      <h6 class="mt-1">15</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="card card-wrapper p-5"
+                  style="height: 94vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="Chart12"></canvas>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="row">
+                  <div class="col-12">
+                    <div
+                      class="card card-wrapper p-5"
+                      style="height: 45vh"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h6>Number of Approved MGPS Requests</h6>
+                      <canvas class="Chart13 mt-2"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div
+                      class="card card-wrapper p-5 mt-3"
+                      style="height: 45vh"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <canvas class="Chart14"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="container-fluid card-p">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="row">
+                  <div class="col-12">
+                    <div
+                      class="card card-wrapper p-5"
+                      style="height: 45vh"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <canvas class="Chart15"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div
+                          class="card card-wrapper p-4 mt-3"
+                          style="height: 47vh; text-align: center"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <h6>Unexecuted Approved Gate passes</h6>
+                          <h6 class="mt-2">15</h6>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div
+                          class="card card-wrapper p-4 mt-3"
+                          style="height: 47vh; text-align: center"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <h6>Emergency Gate Passes YTD</h6>
+                          <h6 class="mt-2">15</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="card card-wrapper p-4"
+                  style="height: 94vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="Chart16"></canvas>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="row">
+                  <div class="col-12">
+                    <div
+                      class="card card-wrapper p-5"
+                      style="height: 45vh"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h6>Number of Approved MGPS Requests</h6>
+                      <canvas class="Chart17 mt-2"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div
+                      class="card card-wrapper p-4 mt-3"
+                      style="height: 47vh"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <canvas class="Chart18"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="container-fluid card-p">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="row">
+                  <div class="col-12">
+                    <div
+                      class="card card-wrapper p-5"
+                      style="height: 45vh"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <canvas class="Chart19"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div
+                      class="card card-wrapper p-4 mt-3"
+                      style="height: 47vh"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h6>Unexecuted Approved Gate passes</h6>
+                      <h6 class="mt-2">15</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="card card-wrapper p-5"
+                  style="height: 94vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="Chart20"></canvas>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="row">
+                  <div class="col-12">
+                    <div
+                      class="card card-wrapper p-4"
+                      style="height: 45vh"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h6>Top 25% visiting individuals</h6>
+                      <div class="d-flex justify-content-between w-100 mt-3">
+                        <h5>Name</h5>
+                        <h5>#</h5>
+                      </div>
+                      <div class="d-flex justify-content-between w-100">
+                        <h6 class="mt-2">Saleh</h6>
+                        <h6 class="mt-2">50</h6>
+                      </div>
+                      <div class="d-flex justify-content-between w-100">
+                        <h6 class="mt-2">ALi</h6>
+                        <h6 class="mt-2">15</h6>
+                      </div>
+                      <div class="d-flex justify-content-between w-100">
+                        <h6 class="mt-2">Sohaib</h6>
+                        <h6 class="mt-2">3</h6>
+                      </div>
+                      <div class="d-flex justify-content-between w-100">
+                        <h6 class="mt-2">Faisal</h6>
+                        <h6 class="mt-2">1</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div
+                      class="card card-wrapper p-5 mt-3"
+                      style="height: 47vh"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <canvas class="Chart21"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="container-fluid card-p">
+            <div class="row">
+              <div class="col-md-6">
+                <div
+                  class="card card-wrapper p-4"
+                  style="height: 45vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="Chart22"></canvas>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="card card-wrapper p-4"
+                  style="height: 45vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="Chart23"></canvas>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div
+                  class="card card-wrapper p-4 mt-3"
+                  style="height: 47vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="Chart24"></canvas>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="container-fluid card-p">
+            <div class="row">
+              <div class="col-md-3">
+                <div
+                  class="card card-wrapper p-4"
+                  style="height: 45vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="Chart25"></canvas>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div
+                  class="card card-wrapper p-4"
+                  style="height: 45vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="Chart26"></canvas>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div
+                  class="card card-wrapper p-4"
+                  style="height: 45vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h5>current valid visit request</h5>
+                  <div class="d-flex mt-5">
+                    <div
+                      class="text-center me-5"
+                      style="
+                        border-radius: 10px;
+                        border: 1px solid black;
+                        padding: 11px;
+                      "
+                    >
+                      <h2>15</h2>
+                      <span>Business</span>
+                    </div>
+                    <div
+                      class="text-center"
+                      style="
+                        border-radius: 10px;
+                        border: 1px solid black;
+                        padding: 11px;
+                      "
+                    >
+                      <h2>30</h2>
+                      <span>Personal</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div
+                  class="card card-wrapper p-4"
+                  style="height: 45vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="Chart27"></canvas>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div
+                  class="card card-wrapper p-4 mt-3"
+                  style="height: 47vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="Chart28"></canvas>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div
+                  class="card card-wrapper p-4 mt-3"
+                  style="height: 47vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h6>Top 25% visiting individuals</h6>
+                  <div class="d-flex justify-content-between w-100">
+                    <h5 class="mt-3">Name</h5>
+                    <h5 class="mt-3">#</h5>
+                  </div>
+                  <div class="d-flex justify-content-between w-100">
+                    <h6 class="mt-2">Saleh</h6>
+                    <h6 class="mt-2">50</h6>
+                  </div>
+                  <div class="d-flex justify-content-between w-100">
+                    <h6 class="mt-2">ALi</h6>
+                    <h6 class="mt-2">15</h6>
+                  </div>
+                  <div class="d-flex justify-content-between w-100">
+                    <h6 class="mt-2">Sohaib</h6>
+                    <h6 class="mt-2">3</h6>
+                  </div>
+                  <div class="d-flex justify-content-between w-100">
+                    <h6 class="mt-2">Faisal</h6>
+                    <h6 class="mt-2">1</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div
+                  class="card card-wrapper p-4 mt-3"
+                  style="height: 47vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h6>
+                    No of persons with <br />
+                    extended validity
+                  </h6>
+                  <h6 class="mt-2">20</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div
+                  class="card card-wrapper p-4 mt-3"
+                  style="height: 47vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="Chart29"></canvas>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="container-fluid card-p">
+            <div class="row">
+              <div class="col-md-4">
+                <div
+                  class="card card-wrapper p-4"
+                  style="height: 45vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="Chart30"></canvas>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div
+                  class="card card-wrapper p-4"
+                  style="height: 45vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="Chart31"></canvas>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="card card-wrapper p-4 mt-3"
+                  style="height: 47vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="Chart32"></canvas>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div
+                  class="card card-wrapper p-4 mt-3"
+                  style="height: 47vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h5>Blacklisted Vehicles</h5>
+                  <h6 class="mt-2">99</h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div
+                  class="card card-wrapper p-4 mt-3"
+                  style="height: 47vh"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h5>Vehicles for interest</h5>
+                  <h6 class="mt-2">5</h6>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="container-fluid card-p">
+            <div class="row">
+              <div class="col-md-4">
+                <div
+                  class="card card-wrapper p-4 mt-5"
+                  style="height: 352px"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h5>Traffic Violations</h5>
+                  <h6 class="mt-2">Subtitle</h6>
+                  <p class="mt-3" style="line-height: 30px">
+                    Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
+                    justo odio, dapibus ac facilisis in, egestas eget quam.
+                    Donec id elit non mi porta gravida at eget metus.
+                  </p>
+                  <a
+                    href="./blank.html"
+                    class="btn rounded-pill btn-primary sub-btn"
+                    >Submit Request</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="card card-wrapper p-4 mt-5"
+                  style="height: 352px"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h5>Traffic Violations</h5>
+                  <h6 class="mt-2">Subtitle</h6>
+                  <p class="mt-3" style="line-height: 30px">
+                    Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
+                    justo odio, dapibus ac facilisis in, egestas eget quam.
+                    Donec id elit non mi porta gravida at eget metus.
+                  </p>
+                  <a
+                    href="./blank.html"
+                    class="btn rounded-pill btn-primary sub-btn"
+                    >Submit Request</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="card card-wrapper p-4 mt-5"
+                  style="height: 352px"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h5>Traffic Violations</h5>
+                  <h6 class="mt-2">Subtitle</h6>
+                  <p class="mt-3" style="line-height: 30px">
+                    Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
+                    justo odio, dapibus ac facilisis in, egestas eget quam.
+                    Donec id elit non mi porta gravida at eget metus.
+                  </p>
+                  <a
+                    href="./blank.html"
+                    class="btn rounded-pill btn-primary sub-btn"
+                    >Submit Request</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Responsive Layout -->
+    <section class="responsive-content">
+      <section class="container-fluid card-p">
+        <div class="row">
+          <div class="col-md-4">
+            <div
+              class="card card-wrapper"
+              style="height: 70vh"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <img src="1.png" alt="" style="height: 100%" />
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6">
+                <div
+                  class="card card-wrapper mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h5>Vehicle Sticker</h5>
+                  <div class="swiper2 mySwiper" style="background: transparent">
+                    <div class="swiper-wrapper" style="background: transparent">
+                      <div class="swiper-slide" style="background: transparent">
+                        <img src="./saudi-white-number-plate.png" alt="" />
+                      </div>
+                      <div class="swiper-slide" style="background: transparent">
+                        <img src="./saudi-white-number-plate.png" alt="" />
+                      </div>
+                      <div class="swiper-slide" style="background: transparent">
+                        <img src="./saudi-white-number-plate.png" alt="" />
+                      </div>
+                      <div class="swiper-slide" style="background: transparent">
+                        <img src="./saudi-white-number-plate.png" alt="" />
+                      </div>
+                      <div class="swiper-slide" style="background: transparent">
+                        <img src="./saudi-white-number-plate.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="./blank.html"
+                    class="btn rounded-pill btn-primary sub-btn"
+                    >Submit Request</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="card card-wrapper mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <img src="my.png" alt="" style="height: 100%" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="card card-wrapper mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h4>My Access</h4>
+                  <h3>6</h3>
+                  <p>Request</p>
+                  <a
+                    href="./blank.html"
+                    class="btn rounded-pill btn-primary sub-btn"
+                    >Submit Request</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="card card-wrapper mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h4>VMS</h4>
+                  <h3>2</h3>
+                  <p>Request</p>
+                  <a
+                    href="./blank.html"
+                    class="btn rounded-pill btn-primary sub-btn"
+                    >Submit Request</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="card card-wrapper mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h4>Unsafe Practices</h4>
+                  <h3>0</h3>
+                  <p>Trafic Violation</p>
+                  <a
+                    href="./blank.html"
+                    class="btn rounded-pill btn-primary sub-btn"
+                    >Submit Request</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="card card-wrapper mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h4>Digital Stickers</h4>
+                  <h3>0</h3>
+                  <p>Requesters</p>
+                  <a
+                    href="./blank.html"
+                    class="btn rounded-pill btn-primary sub-btn"
+                    >Submit Request</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid card-p">
+        <div class="row">
+          <div class="col-md-4">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <h5>Violation By Employee Type</h5>
+              <canvas class="ctx1"></canvas>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <h5>2023/2024 Weekly Violations Statistics Org</h5>
+              <canvas class="ctx2"></canvas>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <h5>Violations By Childern Orgs</h5>
+              <canvas class="ctx3"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid card-p">
+        <div class="row">
+          <div class="col-md-6">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <h5>Violation By Employee Type</h5>
+              <canvas class="ctx4"></canvas>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <h5>2023/2024 Weekly Violations Statistics Org</h5>
+              <canvas class="ctx5"></canvas>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <h5>Violations By Childern Orgs</h5>
+              <canvas class="ctx6"></canvas>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <h5>Violations By Childern Orgs</h5>
+              <canvas class="ctx7"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid card-p">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <div
+                  class="card card-wrapper p-4 mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h1 class="left-h1">1260</h1>
+                  <h5 class="left-h5">Authorize Employees</h5>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="card card-wrapper p-4 mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h5>Plant Access by Type</h5>
+                  <canvas class="ctx8"></canvas>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="card card-wrapper chart-img p-4 mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <img src="id.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="card card-wrapper chart-img p-4 mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <img src="id.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="card card-wrapper chart-img p-4 mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <img src="id.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div
+                      class="card card-wrapper p-4 mt-4"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h3>1,001</h3>
+                      <p>currently in</p>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div
+                      class="card card-wrapper p-4 mt-4"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h5>Top Aramco Dept.</h5>
+                      <p>Industrial Security Support</p>
+                      <p>
+                        Industrial Security Operation <br />
+                        Fire Protection
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div
+                      class="card card-wrapper p-4 mt-4"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h3>120</h3>
+                      <p>VMX</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div
+                      class="card card-wrapper p-4 mt-4"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h5>Plant Access by Type</h5>
+                      <canvas class="ctx9"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div
+                      class="card card-wrapper p-4 mt-4"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h5>Top Contractor</h5>
+                      <p>Al Zamil co.</p>
+                      <p>Al Hajri co.</p>
+                      <p>York co.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div
+                      class="card card-wrapper p-4 mt-4"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h3>155</h3>
+                      <p>MGPS</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid card-p">
+        <div class="row">
+          <div class="col-md-6">
+            <div
+              class="card card-wrapper mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div
+                id="slide04-1"
+                class="chart"
+                style="height: 100vh; width: 100%"
+              >
+                <canvas class="chart canvasCtx1"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div
+                      class="card card-wrapper p-4 mt-4"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h3>1,001</h3>
+                      <p>currently in</p>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div
+                      class="card card-wrapper p-4 mt-4"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h5>Top Aramco Dept.</h5>
+                      <p>Industrial Security Support</p>
+                      <p>
+                        Industrial Security Operation <br />
+                        Fire Protection
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div
+                      class="card card-wrapper p-4 mt-4"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h3>120</h3>
+                      <p>VMX</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div
+                      class="card card-wrapper p-4 mt-4"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h5>Plant Access by Type</h5>
+                      <canvas class="ctx10"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div
+                      class="card card-wrapper p-4 mt-4"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h3>Top Contractor</h3>
+                      <p>Al Zamil co.</p>
+                      <p>Al Hajri co.</p>
+                      <p>York co.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div
+                      class="card card-wrapper p-4 mt-4"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h3>155</h3>
+                      <p>MGPS</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid card-p">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div
+                id="slide05"
+                class="chart"
+                style="height: 100vh; width: 100%"
+              >
+                <canvas class="chart canvasCtx"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid card-p">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-12">
+                <div
+                  class="card card-wrapper p-4 mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="ctx11"></canvas>
+                </div>
+              </div>
+              <div class="col-12">
+                <div
+                  class="card card-wrapper p-4 mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h5>Unexecuted Approved Gate passes</h5>
+                  <h2>15</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <canvas class="ctx12"></canvas>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-12">
+                <div
+                  class="card card-wrapper p-4 mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h5>Number of Approved MGPS Requests</h5>
+                  <canvas class="ctx13"></canvas>
+                </div>
+              </div>
+              <div class="col-12">
+                <div
+                  class="card card-wrapper p-4 mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="ctx14"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid card-p">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-12">
+                <div
+                  class="card card-wrapper p-4 mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="ctx15"></canvas>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div
+                      class="card card-wrapper p-4 mt-4"
+                      style="text-align: center"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h6>Unexecuted Approved Gate passes</h6>
+                      <h2>15</h2>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="card card-wrapper p-4 mt-4"
+                      style="text-align: center"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <h6>Emergency Gate Passes YTD</h6>
+                      <h2>15</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <canvas class="ctx16"></canvas>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-12">
+                <div
+                  class="card card-wrapper p-4 mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h6>Number of Approved MGPS Requests</h6>
+                  <canvas class="ctx17"></canvas>
+                </div>
+              </div>
+              <div class="col-12">
+                <div
+                  class="card card-wrapper p-4 mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="ctx18"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid card-p">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-12">
+                <div
+                  class="card card-wrapper p-4 mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="ctx19"></canvas>
+                </div>
+              </div>
+              <div class="col-12">
+                <div
+                  class="card card-wrapper p-4 mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h5>Unexecuted Approved Gate passes</h5>
+                  <h2>15</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <canvas class="ctx20"></canvas>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-12">
+                <div
+                  class="card card-wrapper p-4 mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h5>Top 25% visiting individuals</h5>
+                  <div class="d-flex justify-content-between w-100 mt-5">
+                    <h4>Name</h4>
+                    <h4>#</h4>
+                  </div>
+                  <div class="d-flex justify-content-between w-100 mt-3">
+                    <span>Saleh</span>
+                    <span>50</span>
+                  </div>
+                  <div class="d-flex justify-content-between w-100 mt-3">
+                    <span>ALi</span>
+                    <span>15</span>
+                  </div>
+                  <div class="d-flex justify-content-between w-100 mt-3">
+                    <span>Sohaib</span>
+                    <span>3</span>
+                  </div>
+                  <div class="d-flex justify-content-between w-100 mt-3">
+                    <span>Faisal</span>
+                    <span>1</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div
+                  class="card card-wrapper p-4 mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <canvas class="ctx21"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid card-p">
+        <div class="row">
+          <div class="col-md-6">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <canvas class="ctx22"></canvas>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <canvas class="ctx23"></canvas>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <canvas class="ctx24"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid card-p">
+        <div class="row">
+          <div class="col-md-3">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <canvas class="ctx25"></canvas>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <canvas class="ctx26"></canvas>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <h5>current valid visit request</h5>
+              <div class="d-flex mt-5">
+                <div
+                  class="text-center me-5"
+                  style="
+                    border-radius: 10px;
+                    border: 1px solid black;
+                    padding: 11px;
+                  "
+                >
+                  <h2>15</h2>
+                  <span>Business</span>
+                </div>
+                <div
+                  class="text-center"
+                  style="
+                    border-radius: 10px;
+                    border: 1px solid black;
+                    padding: 11px;
+                  "
+                >
+                  <h2>30</h2>
+                  <span>Personal</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <canvas class="ctx27"></canvas>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <canvas class="ctx28"></canvas>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <h5>Top 25% visiting individuals</h5>
+              <div class="d-flex justify-content-between w-100 mt-5">
+                <h4>Name</h4>
+                <h4>#</h4>
+              </div>
+              <div class="d-flex justify-content-between w-100 mt-3">
+                <span>Saleh</span>
+                <span>50</span>
+              </div>
+              <div class="d-flex justify-content-between w-100 mt-3">
+                <span>ALi</span>
+                <span>15</span>
+              </div>
+              <div class="d-flex justify-content-between w-100 mt-3">
+                <span>Sohaib</span>
+                <span>3</span>
+              </div>
+              <div class="d-flex justify-content-between w-100 mt-3">
+                <span>Faisal</span>
+                <span>1</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <h5>
+                No of persons with <br />
+                extended validity
+              </h5>
+              <h1>20</h1>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <canvas class="ctx29"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid card-p">
+        <div class="row">
+          <div class="col-md-4">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <canvas class="ctx30"></canvas>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <canvas class="ctx31"></canvas>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <canvas class="ctx32"></canvas>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <h5>Blacklisted Vehicles</h5>
+              <h1>99</h1>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <h5>Vehicles for interest</h5>
+              <h1>5</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid card-p">
+        <div class="row">
+          <div class="col-md-4">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <h1>Traffic Violations</h1>
+              <h5 class="mt-2">Subtitle</h5>
+              <p class="mt-3">
+                Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
+                justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
+                elit non mi porta gravida at eget metus.
+              </p>
+              <a
+                href="./blank.html"
+                class="btn rounded-pill btn-primary sub-btn"
+                >Submit Request</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <h1>Traffic Violations</h1>
+              <h5 class="mt-2">Subtitle</h5>
+              <p class="mt-3">
+                Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
+                justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
+                elit non mi porta gravida at eget metus.
+              </p>
+              <a
+                href="./blank.html"
+                class="btn rounded-pill btn-primary sub-btn"
+                >Submit Request</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card card-wrapper p-4 mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <h1>Traffic Violations</h1>
+              <h5 class="mt-2">Subtitle</h5>
+              <p class="mt-3">
+                Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
+                justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
+                elit non mi porta gravida at eget metus.
+              </p>
+              <a
+                href="./blank.html"
+                class="btn rounded-pill btn-primary sub-btn"
+                >Submit Request</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Table Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- <table class="table table-striped" id="olympicTable">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Age</th>
+                  <th scope="col">Gold</th>
+                  <th scope="col">Silver</th>
+                  <th scope="col">Bronze</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table> -->
+
+            <div
+              class="agGrid"
+            >
+              <div
+                id="closeIcon"
+                style="
+                  color: black;
+                  font-weight: bolder;
+                  cursor: pointer;
+                  user-select: none;
+                "
+              >
+              </div>
+              <div
+                id="myGrid"
+                class="ag-theme-quartz"
+                style="height: 200px; width: 700px"
+              ></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary analyze-data">
+              Click here to analyze data
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Form Modal -->
+    <div
+      class="modal fade"
+      id="loginFormModal"
+      tabindex="-1"
+      aria-labelledby="loginFormModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span>Login</span>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-wrapper text-start">
+                <label for="email">Email</label>
+                <div class="position-relative input-box">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    placeholder="example@gmail.com"
+                  />
+                </div>
+              </div>
+              <div class="form-wrapper text-start mt-4">
+                <label for="password">Password</label>
+                <div class="position-relative input-box">
+                  <i class="fa-solid fa-key"></i>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="password"
+                    placeholder="******"
+                  />
+                </div>
+              </div>
+              <div
+                class="form-wrapper text-start d-flex justify-content-between"
+              >
+                <div>
+                  <input type="checkbox" />
+                  <span>Remember me</span>
+                </div>
+                <a href="#">Forget password?</a>
+              </div>
+              <div class="d-flex">
+                <button class="btn google login-with">
+                  <i class="fa-brands fa-google"></i> Google
+                </button>
+                <button class="btn google login-with">
+                  <i class="fa-brands fa-apple"></i> Apple
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Template Customizer -->
+    <div class="template-customizer"><i class="fa-solid fa-gear"></i></div>
+    <div class="body-drop-shadow"></div>
+
+    <div class="customizer">
+      <div class="template-customizer-box">
+        <ul>
+          <li class="icons"><i class="fa-solid fa-moon"></i></li>
+          <li class="icons2"><i class="fa-solid fa-sun"></i></li>
+          <li class="mt-5">
+            Email:
+            <button
+              class="email-login"
+              data-bs-toggle="modal"
+              data-bs-target="#loginFormModal"
+            >
+              Login
+            </button>
+          </li>
+        </ul>
+        <div class="close-customizer"><i class="fa-solid fa-xmark"></i></div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-wordcloud"></script>
+    <script src="bootstrap-5.0.2.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./responsive-chart.js"></script>
+    <script src="./agrid.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        let swiper = new Swiper(".swiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            type: "bullets",
+            bulletClass: "swiper-pagination-bullet",
+            bulletActiveClass: "swiper-pagination-bullet-active",
+          },
+          direction: "vertical",
+          mousewheel: true,
+          slidePreView: true,
+        });
+
+        let swiper2 = new Swiper(".swiper2", {
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          direction: "horizontal",
+          mousewheel: true,
+          slidePreView: 1,
+        });
+      });
+
+      // Fetch data from API and populate the table
+      function fetchDataAndPopulateTable() {
+        fetch("https://www.ag-grid.com/example-assets/olympic-winners.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const tableBody = document
+              .getElementById("olympicTable")
+              .getElementsByTagName("tbody")[0];
+            data.forEach((entry) => {
+              const row = document.createElement("tr");
+              row.innerHTML = `
+            <td>${entry.athlete}</td>
+            <td>${entry.age}</td>
+            <td>${entry.gold}</td>
+            <td>${entry.silver}</td>
+            <td>${entry.bronze}</td>
+          `;
+              tableBody.appendChild(row);
+            });
+          })
+          .catch((error) => console.error("Error fetching data:", error));
+      }
+
+      // Call the function when the page loads
+      window.addEventListener("DOMContentLoaded", fetchDataAndPopulateTable);
+    </script>
+  </body>
+</html>
