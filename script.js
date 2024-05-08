@@ -88,6 +88,73 @@ document.addEventListener("DOMContentLoaded", function () {
   card.addEventListener("mouseleave", removeAttributes);
 });
 
+document.addEventListener("DOMContentLoaded", (event) => {
+  let swiper = new Swiper(".swiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      type: "bullets",
+      bulletClass: "swiper-pagination-bullet",
+      bulletActiveClass: "swiper-pagination-bullet-active",
+    },
+    direction: "vertical",
+    mousewheel: true,
+    slidePreView: true,
+  });
+
+  let swiper2 = new Swiper(".swiper2", {
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    direction: "horizontal",
+    mousewheel: true,
+    slidePreView: 1,
+  });
+});
+
+// Get all elements with the card class
+var cards = document.querySelectorAll(".card");
+
+// Iterate over each card
+cards.forEach(function (card) {
+  // Add event listener for mouseenter to show modal
+  card.addEventListener("mouseenter", function () {
+    // Add data-bs-toggle and data-bs-target attributes to the card
+    card.setAttribute("data-bs-toggle", "modal");
+    card.setAttribute("data-bs-target", "#exampleModal");
+  });
+
+  // Add event listener for mouseleave to remove modal attributes
+  card.addEventListener("mouseleave", function () {
+    // Remove data-bs-toggle and data-bs-target attributes from the card
+    card.removeAttribute("data-bs-toggle");
+    card.removeAttribute("data-bs-target");
+  });
+
+  // Add event listener for the "Submit Request" button within each card
+  var submitButton = card.querySelector(".sub-btn");
+  if (submitButton) {
+    submitButton.addEventListener("mouseenter", function () {
+      // Remove data-bs-toggle and data-bs-target attributes from the card
+      card.removeAttribute("data-bs-toggle");
+      card.removeAttribute("data-bs-target");
+    });
+
+    submitButton.addEventListener("mouseleave", function () {
+      card.setAttribute("data-bs-toggle", "modal");
+      card.setAttribute("data-bs-target", "#exampleModal");
+    });
+
+    submitButton.addEventListener("click", function (event) {
+      // Prevent default navigation behavior
+      event.preventDefault();
+      // Navigate to page.html
+      window.location.href = "page.html";
+    });
+  }
+});
+
 
 // Chart ctx
 const ctx1 = document.querySelectorAll(".Chart1");
