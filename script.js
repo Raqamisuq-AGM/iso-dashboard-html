@@ -34,12 +34,16 @@ document.addEventListener("DOMContentLoaded", function () {
 icon.addEventListener("click", () => {
   document.body.classList.toggle("dark-theme");
   const isDarkTheme = document.body.classList.contains("dark-theme");
+  var closeButton = document.getElementById("modal-close-btn");
+  closeButton.classList.toggle("btn-close-white");
   console.log("Icon Clicked");
 });
 
 icon2.addEventListener("click", () => {
   document.body.classList.toggle("dark-theme");
   const isDarkTheme = document.body.classList.contains("dark-theme");
+  var closeButton = document.getElementById("modal-close-btn");
+  closeButton.classList.toggle("btn-close-white");
   console.log("Icon Clicked");
 });
 
