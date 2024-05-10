@@ -231,7 +231,7 @@ body {
   min-height: calc(100% - 3.5rem);
 }
 
-.modal-dialog {
+#agGrid-modal {
   max-width: fit-content !important;
 }
 
@@ -242,18 +242,6 @@ body {
 
 .modal-content {
   background-color: var(--primary-color);
-}
-
-.modal-content thead {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background-color: #fff; /* Adjust as needed */
-}
-
-.table-striped > tbody > tr:nth-of-type(odd),
-.table-striped > tbody > tr:nth-of-type(even) {
-  color: var(--primary-text-color);
 }
 
 /* Template customizer */
