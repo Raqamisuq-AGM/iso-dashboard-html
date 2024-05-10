@@ -1,3 +1,8 @@
+/* --------------------------Fonts------------------------- */
+@font-face {
+  font-family: alfont;
+  src: url("./alfont_com_Manifa-V2-Bold.ttf");
+}
 /* --------------------------Reset CSS------------------------- */
 * {
   margin: 0;
@@ -73,13 +78,19 @@ h6 {
   margin: 0 !important;
 }
 
+h5,
+h6,
+p {
+  font-size: 2rem !important;
+}
+
 p {
   margin: 0 !important;
 }
 
 /* --------------------------Global CSS------------------------- */
 body {
-  font-family: "Poppins";
+  font-family: alfont;
   background-color: var(--body-bg-color);
   color: var(--primary-text-color);
   font-size: 18px;
@@ -186,6 +197,7 @@ body {
   border-color: var(--button-hover-bg-color);
   box-shadow: 0 0.125rem 0.25rem 0 rgba(105, 108, 255, 0.4);
   color: var(--primary-text-color);
+  font-size: 1.5rem !important;
 }
 
 .btn-primary:hover {
@@ -410,4 +422,9 @@ body {
   .responsive-content {
     display: block !important;
   }
+}
+
+/* Change legend text color */
+.chart-legend ul li span {
+  color: white !important;
 }

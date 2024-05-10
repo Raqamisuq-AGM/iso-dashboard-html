@@ -155,7 +155,6 @@ cards.forEach(function (card) {
   }
 });
 
-
 // Chart ctx
 const ctx1 = document.querySelectorAll(".Chart1");
 const ctx2 = document.querySelector(".Chart2");
