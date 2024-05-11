@@ -1,6 +1,7 @@
 // Template Customizer
 let icon = document.querySelector(".icons");
 let icon2 = document.querySelector(".icons2");
+const isDarkTheme = document.body.classList.contains("dark-theme");
 
 document.addEventListener("DOMContentLoaded", function () {
   const body = document.body;
@@ -36,6 +37,8 @@ icon.addEventListener("click", () => {
   const isDarkTheme = document.body.classList.contains("dark-theme");
   var closeButton = document.getElementById("modal-close-btn");
   closeButton.classList.toggle("btn-close-white");
+  // Call function to update chart text color
+  updateChartTextColor(isDarkTheme);
   console.log("Icon Clicked");
 });
 
@@ -44,6 +47,8 @@ icon2.addEventListener("click", () => {
   const isDarkTheme = document.body.classList.contains("dark-theme");
   var closeButton = document.getElementById("modal-close-btn");
   closeButton.classList.toggle("btn-close-white");
+  // Call function to update chart text color
+  updateChartTextColor(isDarkTheme);
   console.log("Icon Clicked");
 });
 
@@ -192,9 +197,11 @@ const ctx29 = document.querySelector(".Chart29");
 const ctx30 = document.querySelector(".Chart30");
 const ctx31 = document.querySelector(".Chart31");
 const ctx32 = document.querySelector(".Chart32");
+const ct = document.querySelector(".canvas1").getContext("2d");
+const ctx = document.querySelector(".canvas").getContext("2d");
 
 // Generate Chart 1
-new Chart(ctx1, {
+const chart1 = new Chart(ctx1, {
   type: "doughnut",
   data: {
     labels: ["Red", "Blue"],
@@ -207,16 +214,34 @@ new Chart(ctx1, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 
 // Generate Chart 2
-new Chart(ctx2, {
+const chart2 = new Chart(ctx2, {
   type: "bar",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -229,16 +254,34 @@ new Chart(ctx2, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 
 // Generate Chart 3
-new Chart(ctx3, {
+const chart3 = new Chart(ctx3, {
   type: "bar",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -251,16 +294,34 @@ new Chart(ctx3, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 
 // Generate Chart 4
-new Chart(ctx4, {
+const chart4 = new Chart(ctx4, {
   type: "bar",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -273,16 +334,34 @@ new Chart(ctx4, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 
 // Generate Chart 5
-new Chart(ctx5, {
+const chart5 = new Chart(ctx5, {
   type: "bar",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -295,16 +374,34 @@ new Chart(ctx5, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 
 // Generate Chart 6
-new Chart(ctx6, {
+const chart6 = new Chart(ctx6, {
   type: "bar",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -317,16 +414,34 @@ new Chart(ctx6, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 
 // Generate Chart 7
-new Chart(ctx7, {
+const chart7 = new Chart(ctx7, {
   type: "doughnut",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -339,16 +454,34 @@ new Chart(ctx7, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 
 // Generate Chart 8
-new Chart(ctx8, {
+const chart8 = new Chart(ctx8, {
   type: "doughnut",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -361,16 +494,34 @@ new Chart(ctx8, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 
 // Generate Chart 9
-new Chart(ctx9, {
+const chart9 = new Chart(ctx9, {
   type: "doughnut",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -383,16 +534,34 @@ new Chart(ctx9, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 
 // Generate Chart 10
-new Chart(ctx10, {
+const chart10 = new Chart(ctx10, {
   type: "doughnut",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -405,16 +574,34 @@ new Chart(ctx10, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 
 // Generate Chart 11
-new Chart(ctx11, {
+const chart11 = new Chart(ctx11, {
   type: "bar",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -428,16 +615,34 @@ new Chart(ctx11, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 
 // Generate Chart 12
-new Chart(ctx12, {
+const chart12 = new Chart(ctx12, {
   type: "bar",
   data: {
     labels: ["A", "B", "C"],
@@ -451,11 +656,34 @@ new Chart(ctx12, {
   options: {
     indexAxis: "y", // <-- here
     responsive: true,
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
+      },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
+    },
   },
 });
 
 // Generate Chart 13
-new Chart(ctx13, {
+const chart13 = new Chart(ctx13, {
   type: "doughnut",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -469,16 +697,34 @@ new Chart(ctx13, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 
 // Generate Chart 14
-new Chart(ctx14, {
+const chart14 = new Chart(ctx14, {
   type: "bar",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -492,16 +738,34 @@ new Chart(ctx14, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 
 // Generate Chart 15
-new Chart(ctx15, {
+const chart15 = new Chart(ctx15, {
   type: "bar",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -515,16 +779,34 @@ new Chart(ctx15, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 
 // Generate Chart 16
-new Chart(ctx16, {
+const chart16 = new Chart(ctx16, {
   type: "bar",
   data: {
     labels: ["A", "B", "C"],
@@ -538,11 +820,34 @@ new Chart(ctx16, {
   options: {
     indexAxis: "y", // <-- here
     responsive: true,
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
+      },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
+    },
   },
 });
 
 // Generate Chart 17
-new Chart(ctx17, {
+const chart17 = new Chart(ctx17, {
   type: "doughnut",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -556,16 +861,34 @@ new Chart(ctx17, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 
 // Generate Chart 18
-new Chart(ctx18, {
+const chart18 = new Chart(ctx18, {
   type: "bar",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -579,16 +902,34 @@ new Chart(ctx18, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 
 // Generate Chart 19
-new Chart(ctx19, {
+const chart19 = new Chart(ctx19, {
   type: "bar",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -602,16 +943,34 @@ new Chart(ctx19, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 
 // Generate Chart 20
-new Chart(ctx20, {
+const chart20 = new Chart(ctx20, {
   type: "bar",
   data: {
     labels: ["A", "B", "C"],
@@ -625,10 +984,33 @@ new Chart(ctx20, {
   options: {
     indexAxis: "y", // <-- here
     responsive: true,
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
+      },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
+    },
   },
 });
 // Generate Chart 21
-new Chart(ctx21, {
+const chart21 = new Chart(ctx21, {
   type: "bar",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -642,15 +1024,33 @@ new Chart(ctx21, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 // Generate Chart 22
-new Chart(ctx22, {
+const chart22 = new Chart(ctx22, {
   type: "bar",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -664,15 +1064,33 @@ new Chart(ctx22, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 // Generate Chart 23
-new Chart(ctx23, {
+const chart23 = new Chart(ctx23, {
   type: "bar",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -686,15 +1104,33 @@ new Chart(ctx23, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 // Generate Chart 24
-new Chart(ctx24, {
+const chart24 = new Chart(ctx24, {
   type: "bar",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -708,15 +1144,33 @@ new Chart(ctx24, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 // Generate Chart 25
-new Chart(ctx25, {
+const chart25 = new Chart(ctx25, {
   type: "bar",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -730,15 +1184,33 @@ new Chart(ctx25, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 // Generate Chart 26
-new Chart(ctx26, {
+const chart26 = new Chart(ctx26, {
   type: "bar",
   data: {
     labels: ["A", "B", "C"],
@@ -755,7 +1227,7 @@ new Chart(ctx26, {
   },
 }); // Generate Chart 27
 
-new Chart(ctx27, {
+const chart27 = new Chart(ctx27, {
   type: "bar",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -769,15 +1241,33 @@ new Chart(ctx27, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 // Generate Chart 28
-new Chart(ctx28, {
+const chart28 = new Chart(ctx28, {
   type: "doughnut",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -791,15 +1281,33 @@ new Chart(ctx28, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 // Generate Chart 29
-new Chart(ctx29, {
+const chart29 = new Chart(ctx29, {
   type: "doughnut",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -813,15 +1321,33 @@ new Chart(ctx29, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 // Generate Chart 30
-new Chart(ctx30, {
+const chart30 = new Chart(ctx30, {
   type: "doughnut",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -835,15 +1361,33 @@ new Chart(ctx30, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 // Generate Chart 31
-new Chart(ctx31, {
+const chart31 = new Chart(ctx31, {
   type: "line",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -857,15 +1401,33 @@ new Chart(ctx31, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
 // Generate Chart 32
-new Chart(ctx32, {
+const chart32 = new Chart(ctx32, {
   type: "bar",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -879,10 +1441,28 @@ new Chart(ctx32, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: isDarkTheme ? "white" : "#000", // set legend text color to white
+        },
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+        },
       },
+      x: {
+        ticks: {
+          color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+        },
+      },
+    },
+    tooltips: {
+      bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
     },
   },
 });
@@ -1091,31 +1671,29 @@ const words1 = [
   { key: "block", value: 1 },
 ];
 
-document.addEventListener("DOMContentLoaded", function () {
-  const ct = document.querySelector(".canvas1").getContext("2d");
-  new Chart(ct, {
-    type: "wordCloud",
-    data: {
-      labels: words1.map((d) => d.key),
-      datasets: [
-        {
-          label: "",
-          data: words1.map((d) => 10 + d.value * 4),
-        },
-      ],
+const wordCloud1 = new Chart(ct, {
+  type: "wordCloud",
+  data: {
+    labels: words1.map((d) => d.key),
+    datasets: [
+      {
+        label: "",
+        data: words1.map((d) => 10 + d.value * 4),
+      },
+    ],
+  },
+  options: {
+    title: {
+      display: false,
+      text: "Chart.js Word Cloud",
     },
-    options: {
-      title: {
+    plugins: {
+      legend: {
         display: false,
-        text: "Chart.js Word Cloud",
-      },
-      plugins: {
-        legend: {
-          display: false,
-        },
       },
     },
-  });
+    color: isDarkTheme ? "#ffffff" : "#000000", // Set text color
+  },
 });
 
 // Generate WordCloud Chart 2
@@ -1323,29 +1901,232 @@ const words = [
   { key: "block", value: 1 },
 ];
 
-document.addEventListener("DOMContentLoaded", function () {
-  const ctx = document.querySelector(".canvas").getContext("2d");
-  const chart = new Chart(ctx, {
-    type: "wordCloud",
-    data: {
-      labels: words.map((d) => d.key),
-      datasets: [
-        {
-          label: "",
-          data: words.map((d) => 10 + d.value * 10),
-        },
-      ],
+const wordCloud2 = new Chart(ctx, {
+  type: "wordCloud",
+  data: {
+    labels: words.map((d) => d.key),
+    datasets: [
+      {
+        label: "",
+        data: words.map((d) => 10 + d.value * 10),
+      },
+    ],
+  },
+  options: {
+    title: {
+      display: false,
+      text: "Chart.js Word Cloud",
     },
-    options: {
-      title: {
+    plugins: {
+      legend: {
         display: false,
-        text: "Chart.js Word Cloud",
-      },
-      plugins: {
-        legend: {
-          display: false,
-        },
       },
     },
-  });
+    color: isDarkTheme ? "#ffffff" : "#000000", // Set text color
+  },
 });
+
+// Function to update chart text color based on theme
+function updateChartTextColor(isDarkTheme) {
+  const chartOptions = {
+    color: isDarkTheme ? "#ffffff" : "#000000", // Set color based on theme
+  };
+
+  // Update chart options for both charts
+  // chart1
+  chart1.options.plugins.legend.labels.color = chartOptions.color;
+  chart1.options.scales.y.ticks.color = chartOptions.color;
+  chart1.options.scales.x.ticks.color = chartOptions.color;
+  // chart2
+  chart2.options.plugins.legend.labels.color = chartOptions.color;
+  chart2.options.scales.y.ticks.color = chartOptions.color;
+  chart2.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart3
+  chart3.options.plugins.legend.labels.color = chartOptions.color;
+  chart3.options.scales.y.ticks.color = chartOptions.color;
+  chart3.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart4
+  chart4.options.plugins.legend.labels.color = chartOptions.color;
+  chart4.options.scales.y.ticks.color = chartOptions.color;
+  chart4.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart5
+  chart5.options.plugins.legend.labels.color = chartOptions.color;
+  chart5.options.scales.y.ticks.color = chartOptions.color;
+  chart5.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart6
+  chart6.options.plugins.legend.labels.color = chartOptions.color;
+  chart6.options.scales.y.ticks.color = chartOptions.color;
+  chart6.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart7
+  chart7.options.plugins.legend.labels.color = chartOptions.color;
+  chart7.options.scales.y.ticks.color = chartOptions.color;
+  chart7.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart8
+  chart8.options.plugins.legend.labels.color = chartOptions.color;
+  chart8.options.scales.y.ticks.color = chartOptions.color;
+  chart8.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart9
+  chart9.options.plugins.legend.labels.color = chartOptions.color;
+  chart9.options.scales.y.ticks.color = chartOptions.color;
+  chart9.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart10
+  chart10.options.plugins.legend.labels.color = chartOptions.color;
+  chart10.options.scales.y.ticks.color = chartOptions.color;
+  chart10.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart11
+  chart11.options.plugins.legend.labels.color = chartOptions.color;
+  chart11.options.scales.y.ticks.color = chartOptions.color;
+  chart11.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart12
+  chart12.options.plugins.legend.labels.color = chartOptions.color;
+  chart12.options.scales.y.ticks.color = chartOptions.color;
+  chart12.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart13
+  chart13.options.plugins.legend.labels.color = chartOptions.color;
+  chart13.options.scales.y.ticks.color = chartOptions.color;
+  chart13.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart14
+  chart14.options.plugins.legend.labels.color = chartOptions.color;
+  chart14.options.scales.y.ticks.color = chartOptions.color;
+  chart14.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart15
+  chart15.options.plugins.legend.labels.color = chartOptions.color;
+  chart15.options.scales.y.ticks.color = chartOptions.color;
+  chart15.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart16
+  chart16.options.plugins.legend.labels.color = chartOptions.color;
+  chart16.options.scales.y.ticks.color = chartOptions.color;
+  chart16.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart17
+  chart17.options.plugins.legend.labels.color = chartOptions.color;
+  chart17.options.scales.y.ticks.color = chartOptions.color;
+  chart17.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart18
+  chart18.options.plugins.legend.labels.color = chartOptions.color;
+  chart18.options.scales.y.ticks.color = chartOptions.color;
+  chart18.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart19
+  chart19.options.plugins.legend.labels.color = chartOptions.color;
+  chart19.options.scales.y.ticks.color = chartOptions.color;
+  chart19.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart20
+  chart20.options.plugins.legend.labels.color = chartOptions.color;
+  chart20.options.scales.y.ticks.color = chartOptions.color;
+  chart20.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart21
+  chart21.options.plugins.legend.labels.color = chartOptions.color;
+  chart21.options.scales.y.ticks.color = chartOptions.color;
+  chart21.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart22
+  chart22.options.plugins.legend.labels.color = chartOptions.color;
+  chart22.options.scales.y.ticks.color = chartOptions.color;
+  chart22.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart23
+  chart23.options.plugins.legend.labels.color = chartOptions.color;
+  chart23.options.scales.y.ticks.color = chartOptions.color;
+  chart23.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart24
+  chart24.options.plugins.legend.labels.color = chartOptions.color;
+  chart24.options.scales.y.ticks.color = chartOptions.color;
+  chart24.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart25
+  chart25.options.plugins.legend.labels.color = chartOptions.color;
+  chart25.options.scales.y.ticks.color = chartOptions.color;
+  chart25.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart26
+  chart26.options.plugins.legend.labels.color = chartOptions.color;
+  chart26.options.scales.y.ticks.color = chartOptions.color;
+  chart26.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart27
+  chart27.options.plugins.legend.labels.color = chartOptions.color;
+  chart27.options.scales.y.ticks.color = chartOptions.color;
+  chart27.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart28
+  chart28.options.plugins.legend.labels.color = chartOptions.color;
+  chart28.options.scales.y.ticks.color = chartOptions.color;
+  chart28.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart29
+  chart29.options.plugins.legend.labels.color = chartOptions.color;
+  chart29.options.scales.y.ticks.color = chartOptions.color;
+  chart29.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart30
+  chart30.options.plugins.legend.labels.color = chartOptions.color;
+  chart30.options.scales.y.ticks.color = chartOptions.color;
+  chart30.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart31
+  chart31.options.plugins.legend.labels.color = chartOptions.color;
+  chart31.options.scales.y.ticks.color = chartOptions.color;
+  chart31.options.scales.x.ticks.color = chartOptions.color;
+
+  // chart32
+  chart32.options.plugins.legend.labels.color = chartOptions.color;
+  chart32.options.scales.y.ticks.color = chartOptions.color;
+  chart32.options.scales.x.ticks.color = chartOptions.color;
+
+  wordCloud1.options.color = chartOptions.color;
+  wordCloud2.options.color = chartOptions.color;
+
+  chart1.update();
+  chart2.update();
+  chart3.update();
+  chart4.update();
+  chart5.update();
+  chart6.update();
+  chart7.update();
+  chart8.update();
+  chart9.update();
+  chart10.update();
+  chart11.update();
+  chart12.update();
+  chart13.update();
+  chart14.update();
+  chart15.update();
+  chart16.update();
+  chart17.update();
+  chart18.update();
+  chart19.update();
+  chart20.update();
+  chart21.update();
+  chart22.update();
+  chart23.update();
+  chart24.update();
+  chart25.update();
+  chart26.update();
+  chart27.update();
+  chart28.update();
+  chart29.update();
+  chart30.update();
+  chart31.update();
+  chart32.update();
+  wordCloud1.update();
+  wordCloud2.update();
+}
