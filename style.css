@@ -279,6 +279,34 @@ body {
   background-color: var(--primary-color);
 }
 
+.agGrid {
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+}
+
+/* This targets the grid itself */
+.ag-theme-quartz .ag-root-wrapper {
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+}
+
+/* This targets the header */
+.ag-header {
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+}
+
+/* This targets the header row*/
+.ag-header.ag-header-allow-overflow .ag-header-row {
+  color: var(--primary-text-color);
+}
+
+/* This targets the row cells */
+.ag-row {
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+}
+
 /* Template customizer */
 .template-customizer {
   position: fixed;

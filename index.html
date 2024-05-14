@@ -600,7 +600,12 @@
                         <div class="col-md-12">
                           <div
                             class="card card-wrapper p-4"
-                            style="height: 30vh"
+                            style="
+                              height: 30vh;
+                              background-color: #3faa77;
+                              color: #fff;
+                              background-image: none;
+                            "
                           >
                             <h3>1,001</h3>
                             <p>currently in</p>
@@ -696,7 +701,12 @@
                         <div class="col-md-12">
                           <div
                             class="card card-wrapper p-4"
-                            style="height: 30vh"
+                            style="
+                              height: 30vh;
+                              background-color: #3faa77;
+                              color: #fff;
+                              background-image: none;
+                            "
                           >
                             <h5>1,001</h5>
                             <h6 class="mt-1">currently in</h6>
@@ -1865,6 +1875,11 @@
                       class="card card-wrapper p-4 mt-4"
                       data-bs-toggle="modal"
                       data-bs-target="#exampleModal"
+                      style="
+                        background-color: #3faa77;
+                        color: #fff;
+                        background-image: none;
+                      "
                     >
                       <h3>1,001</h3>
                       <p>currently in</p>
@@ -1962,6 +1977,11 @@
                       class="card card-wrapper p-4 mt-4"
                       data-bs-toggle="modal"
                       data-bs-target="#exampleModal"
+                      style="
+                        background-color: #3faa77;
+                        color: #fff;
+                        background-image: none;
+                      "
                     >
                       <h3>1,001</h3>
                       <p>currently in</p>
@@ -2550,30 +2570,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <!-- <table class="table table-striped" id="olympicTable">
-              <thead>
-                <tr>
-                  <th scope="col">Name</th>
-                  <th scope="col">Age</th>
-                  <th scope="col">Gold</th>
-                  <th scope="col">Silver</th>
-                  <th scope="col">Bronze</th>
-                </tr>
-              </thead>
-              <tbody>
-              </tbody>
-            </table> -->
-
             <div class="agGrid">
-              <div
-                id="closeIcon"
-                style="
-                  color: black;
-                  font-weight: bolder;
-                  cursor: pointer;
-                  user-select: none;
-                "
-              ></div>
               <div
                 id="myGrid"
                 class="ag-theme-quartz"
@@ -2668,7 +2665,9 @@
         <ul>
           <li class="icons"><i class="fa-solid fa-moon"></i></li>
           <li class="icons2"><i class="fa-solid fa-sun"></i></li>
-          <li class="mt-5">
+          <li style="font-size: 1.5rem">Grid Setting</li>
+          <li style="font-size: 1.5rem">Email Setting</li>
+          <li class="mt-5" style="font-size: 1.5rem">
             Email:
             <button
               class="email-login"
