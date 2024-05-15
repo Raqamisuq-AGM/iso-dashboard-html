@@ -198,6 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const ctx30 = document.querySelector(".Chart30");
   const ctx31 = document.querySelector(".Chart31");
   const ctx32 = document.querySelector(".Chart32");
+  const ctx33 = document.querySelector(".Chart33");
   const ct = document.querySelector(".canvas1").getContext("2d");
   const ctx = document.querySelector(".canvas").getContext("2d");
 
@@ -1225,6 +1226,29 @@ document.addEventListener("DOMContentLoaded", function () {
     options: {
       indexAxis: "y", // <-- here
       responsive: true,
+      plugins: {
+        legend: {
+          labels: {
+            color: isDarkTheme ? "white" : "#000", // set legend text color to white
+          },
+        },
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+          },
+        },
+        x: {
+          ticks: {
+            color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+          },
+        },
+      },
+      tooltips: {
+        bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
+      },
     },
   }); // Generate Chart 27
 
@@ -1429,6 +1453,46 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   // Generate Chart 32
   const chart32 = new Chart(ctx32, {
+    type: "bar",
+    data: {
+      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      datasets: [
+        {
+          axis: "y",
+          label: "# of Votes",
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1,
+        },
+      ],
+    },
+    options: {
+      plugins: {
+        legend: {
+          labels: {
+            color: isDarkTheme ? "white" : "#000", // set legend text color to white
+          },
+        },
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+          },
+        },
+        x: {
+          ticks: {
+            color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+          },
+        },
+      },
+      tooltips: {
+        bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
+      },
+    },
+  });
+  // Generate Chart 33
+  const chart33 = new Chart(ctx33, {
     type: "bar",
     data: {
       labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
