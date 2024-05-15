@@ -102,8 +102,8 @@ body {
 }
 
 .plate-grid-item {
-  border: 1px solid var(--primary-text-color);
-  padding: 20px;
+  border: 1px solid #000;
+  padding: 15px;
   border-radius: 4px;
   text-align: center;
   position: relative;
@@ -111,12 +111,11 @@ body {
 
 .plate-txt {
   position: absolute;
-  color: var(--primary-text-color);
+  color: #000;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 25px;
-  font-family: "Times New Roman", serif;
 }
 
 .plate-grid-item.vertical-item {
@@ -127,9 +126,8 @@ body {
 .vertical-txt {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
-  color: var(--primary-text-color);
+  color: #000;
   position: absolute;
-  font-family: "Times New Roman", serif;
 }
 
 .swiper {
@@ -234,6 +232,7 @@ body {
   box-shadow: 0 0.125rem 0.25rem 0 rgba(105, 108, 255, 0.4);
   color: #fff;
   font-size: 1.5rem !important;
+  padding: 0 15px !important;
 }
 
 .btn-primary:hover {
@@ -364,6 +363,7 @@ body {
   cursor: pointer;
 }
 .close-customizer {
+  color: #fff;
   position: fixed;
   top: 0;
   left: 245px;
@@ -473,6 +473,18 @@ body {
 
   .responsive-content {
     display: block !important;
+  }
+}
+
+@media (max-width: 1366px) {
+  .h-fit-plate {
+    height: 70px !important;
+  }
+}
+
+@media (min-width: 1367px) {
+  .h-fit-plate {
+    height: 90% !important;
   }
 }
 
