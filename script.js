@@ -1,9 +1,9 @@
-// Template Customizer
-let icon = document.querySelector(".icons");
-let icon2 = document.querySelector(".icons2");
-const isDarkTheme = document.body.classList.contains("dark-theme");
-
 document.addEventListener("DOMContentLoaded", function () {
+  // Template Customizer
+  let icon = document.querySelector(".icons");
+  let icon2 = document.querySelector(".icons2");
+  const isDarkTheme = document.body.classList.contains("dark-theme");
+
   const body = document.body;
   const icons = document.querySelector(".icons");
   const icons2 = document.querySelector(".icons2");
@@ -30,54 +30,52 @@ document.addEventListener("DOMContentLoaded", function () {
   // MutationObserver to detect changes in body class
   const observer = new MutationObserver(toggleIconsVisibility);
   observer.observe(body, { attributes: true, attributeFilter: ["class"] });
-});
 
-icon.addEventListener("click", () => {
-  document.body.classList.toggle("dark-theme");
-  const isDarkTheme = document.body.classList.contains("dark-theme");
-  var closeButton = document.getElementById("modal-close-btn");
-  closeButton.classList.toggle("btn-close-white");
-  // Call function to update chart text color
-  updateChartTextColor(isDarkTheme);
-  console.log("Icon Clicked");
-});
+  icon.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme");
+    const isDarkTheme = document.body.classList.contains("dark-theme");
+    var closeButton = document.getElementById("modal-close-btn");
+    closeButton.classList.toggle("btn-close-white");
+    // Call function to update chart text color
+    updateChartTextColor(isDarkTheme);
+    console.log("Icon Clicked");
+  });
 
-icon2.addEventListener("click", () => {
-  document.body.classList.toggle("dark-theme");
-  const isDarkTheme = document.body.classList.contains("dark-theme");
-  var closeButton = document.getElementById("modal-close-btn");
-  closeButton.classList.toggle("btn-close-white");
-  // Call function to update chart text color
-  updateChartTextColor(isDarkTheme);
-  console.log("Icon Clicked");
-});
+  icon2.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme");
+    const isDarkTheme = document.body.classList.contains("dark-theme");
+    var closeButton = document.getElementById("modal-close-btn");
+    closeButton.classList.toggle("btn-close-white");
+    // Call function to update chart text color
+    updateChartTextColor(isDarkTheme);
+    console.log("Icon Clicked");
+  });
 
-let customizerBtn = document.querySelector(".template-customizer");
-let customizerCloseBtn = document.querySelector(".close-customizer");
-let customizer = document.querySelector(".customizer");
-let bodyDropShadow = document.querySelector(".body-drop-shadow");
-let emailLogin = document.querySelector(".email-login");
-customizerBtn.addEventListener("click", () => {
-  bodyDropShadow.style.display = "block";
-  customizer.style.transform = "translateX(0)";
-});
+  let customizerBtn = document.querySelector(".template-customizer");
+  let customizerCloseBtn = document.querySelector(".close-customizer");
+  let customizer = document.querySelector(".customizer");
+  let bodyDropShadow = document.querySelector(".body-drop-shadow");
+  let emailLogin = document.querySelector(".email-login");
+  customizerBtn.addEventListener("click", () => {
+    bodyDropShadow.style.display = "block";
+    customizer.style.transform = "translateX(0)";
+  });
 
-bodyDropShadow.addEventListener("click", () => {
-  bodyDropShadow.style.display = "none";
-  customizer.style.transform = "translateX(-1000px)";
-});
+  bodyDropShadow.addEventListener("click", () => {
+    bodyDropShadow.style.display = "none";
+    customizer.style.transform = "translateX(-1000px)";
+  });
 
-customizerCloseBtn.addEventListener("click", () => {
-  bodyDropShadow.style.display = "none";
-  customizer.style.transform = "translateX(-1000px)";
-});
+  customizerCloseBtn.addEventListener("click", () => {
+    bodyDropShadow.style.display = "none";
+    customizer.style.transform = "translateX(-1000px)";
+  });
 
-emailLogin.addEventListener("click", () => {
-  bodyDropShadow.style.display = "none";
-  customizer.style.transform = "translateX(-1000px)";
-});
+  emailLogin.addEventListener("click", () => {
+    bodyDropShadow.style.display = "none";
+    customizer.style.transform = "translateX(-1000px)";
+  });
 
-document.addEventListener("DOMContentLoaded", function () {
   const card = document.querySelector(".card-wrapper");
 
   // Function to add attributes on hover
@@ -95,9 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add event listeners for mouseenter and mouseleave
   card.addEventListener("mouseenter", addAttributes);
   card.addEventListener("mouseleave", removeAttributes);
-});
 
-document.addEventListener("DOMContentLoaded", (event) => {
   let swiper = new Swiper(".swiper", {
     pagination: {
       el: ".swiper-pagination",
@@ -120,51 +116,49 @@ document.addEventListener("DOMContentLoaded", (event) => {
     mousewheel: true,
     slidePreView: 1,
   });
-});
 
-// Get all elements with the card class
-var cards = document.querySelectorAll(".card");
+  // Get all elements with the card class
+  var cards = document.querySelectorAll(".card");
 
-// Iterate over each card
-cards.forEach(function (card) {
-  // Add event listener for mouseenter to show modal
-  card.addEventListener("mouseenter", function () {
-    // Add data-bs-toggle and data-bs-target attributes to the card
-    card.setAttribute("data-bs-toggle", "modal");
-    card.setAttribute("data-bs-target", "#exampleModal");
-  });
+  // Iterate over each card
+  cards.forEach(function (card) {
+    // Add event listener for mouseenter to show modal
+    card.addEventListener("mouseenter", function () {
+      // Add data-bs-toggle and data-bs-target attributes to the card
+      card.setAttribute("data-bs-toggle", "modal");
+      card.setAttribute("data-bs-target", "#exampleModal");
+    });
 
-  // Add event listener for mouseleave to remove modal attributes
-  card.addEventListener("mouseleave", function () {
-    // Remove data-bs-toggle and data-bs-target attributes from the card
-    card.removeAttribute("data-bs-toggle");
-    card.removeAttribute("data-bs-target");
-  });
-
-  // Add event listener for the "Submit Request" button within each card
-  var submitButton = card.querySelector(".sub-btn");
-  if (submitButton) {
-    submitButton.addEventListener("mouseenter", function () {
+    // Add event listener for mouseleave to remove modal attributes
+    card.addEventListener("mouseleave", function () {
       // Remove data-bs-toggle and data-bs-target attributes from the card
       card.removeAttribute("data-bs-toggle");
       card.removeAttribute("data-bs-target");
     });
 
-    submitButton.addEventListener("mouseleave", function () {
-      card.setAttribute("data-bs-toggle", "modal");
-      card.setAttribute("data-bs-target", "#exampleModal");
-    });
+    // Add event listener for the "Submit Request" button within each card
+    var submitButton = card.querySelector(".sub-btn");
+    if (submitButton) {
+      submitButton.addEventListener("mouseenter", function () {
+        // Remove data-bs-toggle and data-bs-target attributes from the card
+        card.removeAttribute("data-bs-toggle");
+        card.removeAttribute("data-bs-target");
+      });
 
-    submitButton.addEventListener("click", function (event) {
-      // Prevent default navigation behavior
-      event.preventDefault();
-      // Navigate to page.html
-      window.location.href = "page.html";
-    });
-  }
-});
+      submitButton.addEventListener("mouseleave", function () {
+        card.setAttribute("data-bs-toggle", "modal");
+        card.setAttribute("data-bs-target", "#exampleModal");
+      });
 
-document.addEventListener("DOMContentLoaded", function () {
+      submitButton.addEventListener("click", function (event) {
+        // Prevent default navigation behavior
+        event.preventDefault();
+        // Navigate to page.html
+        window.location.href = "page.html";
+      });
+    }
+  });
+
   // Chart ctx
   const ctx1 = document.querySelectorAll(".Chart1");
   const ctx2 = document.querySelector(".Chart2");
@@ -1990,209 +1984,215 @@ document.addEventListener("DOMContentLoaded", function () {
       color: isDarkTheme ? "#ffffff" : "#000000", // Set text color
     },
   });
+
+  // Function to update chart text color based on theme
+  function updateChartTextColor(isDarkTheme) {
+    const chartOptions = {
+      color: isDarkTheme ? "#ffffff" : "#000000", // Set color based on theme
+    };
+
+    // Update chart options for both charts
+    // chart1
+    chart1.options.plugins.legend.labels.color = chartOptions.color;
+    chart1.options.scales.y.ticks.color = chartOptions.color;
+    chart1.options.scales.x.ticks.color = chartOptions.color;
+    // chart2
+    chart2.options.plugins.legend.labels.color = chartOptions.color;
+    chart2.options.scales.y.ticks.color = chartOptions.color;
+    chart2.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart3
+    chart3.options.plugins.legend.labels.color = chartOptions.color;
+    chart3.options.scales.y.ticks.color = chartOptions.color;
+    chart3.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart4
+    chart4.options.plugins.legend.labels.color = chartOptions.color;
+    chart4.options.scales.y.ticks.color = chartOptions.color;
+    chart4.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart5
+    chart5.options.plugins.legend.labels.color = chartOptions.color;
+    chart5.options.scales.y.ticks.color = chartOptions.color;
+    chart5.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart6
+    chart6.options.plugins.legend.labels.color = chartOptions.color;
+    chart6.options.scales.y.ticks.color = chartOptions.color;
+    chart6.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart7
+    chart7.options.plugins.legend.labels.color = chartOptions.color;
+    chart7.options.scales.y.ticks.color = chartOptions.color;
+    chart7.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart8
+    chart8.options.plugins.legend.labels.color = chartOptions.color;
+    chart8.options.scales.y.ticks.color = chartOptions.color;
+    chart8.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart9
+    chart9.options.plugins.legend.labels.color = chartOptions.color;
+    chart9.options.scales.y.ticks.color = chartOptions.color;
+    chart9.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart10
+    chart10.options.plugins.legend.labels.color = chartOptions.color;
+    chart10.options.scales.y.ticks.color = chartOptions.color;
+    chart10.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart11
+    chart11.options.plugins.legend.labels.color = chartOptions.color;
+    chart11.options.scales.y.ticks.color = chartOptions.color;
+    chart11.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart12
+    chart12.options.plugins.legend.labels.color = chartOptions.color;
+    chart12.options.scales.y.ticks.color = chartOptions.color;
+    chart12.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart13
+    chart13.options.plugins.legend.labels.color = chartOptions.color;
+    chart13.options.scales.y.ticks.color = chartOptions.color;
+    chart13.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart14
+    chart14.options.plugins.legend.labels.color = chartOptions.color;
+    chart14.options.scales.y.ticks.color = chartOptions.color;
+    chart14.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart15
+    chart15.options.plugins.legend.labels.color = chartOptions.color;
+    chart15.options.scales.y.ticks.color = chartOptions.color;
+    chart15.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart16
+    chart16.options.plugins.legend.labels.color = chartOptions.color;
+    chart16.options.scales.y.ticks.color = chartOptions.color;
+    chart16.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart17
+    chart17.options.plugins.legend.labels.color = chartOptions.color;
+    chart17.options.scales.y.ticks.color = chartOptions.color;
+    chart17.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart18
+    chart18.options.plugins.legend.labels.color = chartOptions.color;
+    chart18.options.scales.y.ticks.color = chartOptions.color;
+    chart18.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart19
+    chart19.options.plugins.legend.labels.color = chartOptions.color;
+    chart19.options.scales.y.ticks.color = chartOptions.color;
+    chart19.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart20
+    chart20.options.plugins.legend.labels.color = chartOptions.color;
+    chart20.options.scales.y.ticks.color = chartOptions.color;
+    chart20.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart21
+    chart21.options.plugins.legend.labels.color = chartOptions.color;
+    chart21.options.scales.y.ticks.color = chartOptions.color;
+    chart21.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart22
+    chart22.options.plugins.legend.labels.color = chartOptions.color;
+    chart22.options.scales.y.ticks.color = chartOptions.color;
+    chart22.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart23
+    chart23.options.plugins.legend.labels.color = chartOptions.color;
+    chart23.options.scales.y.ticks.color = chartOptions.color;
+    chart23.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart24
+    chart24.options.plugins.legend.labels.color = chartOptions.color;
+    chart24.options.scales.y.ticks.color = chartOptions.color;
+    chart24.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart25
+    chart25.options.plugins.legend.labels.color = chartOptions.color;
+    chart25.options.scales.y.ticks.color = chartOptions.color;
+    chart25.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart26
+    chart26.options.plugins.legend.labels.color = chartOptions.color;
+    chart26.options.scales.y.ticks.color = chartOptions.color;
+    chart26.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart27
+    chart27.options.plugins.legend.labels.color = chartOptions.color;
+    chart27.options.scales.y.ticks.color = chartOptions.color;
+    chart27.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart28
+    chart28.options.plugins.legend.labels.color = chartOptions.color;
+    chart28.options.scales.y.ticks.color = chartOptions.color;
+    chart28.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart29
+    chart29.options.plugins.legend.labels.color = chartOptions.color;
+    chart29.options.scales.y.ticks.color = chartOptions.color;
+    chart29.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart30
+    chart30.options.plugins.legend.labels.color = chartOptions.color;
+    chart30.options.scales.y.ticks.color = chartOptions.color;
+    chart30.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart31
+    chart31.options.plugins.legend.labels.color = chartOptions.color;
+    chart31.options.scales.y.ticks.color = chartOptions.color;
+    chart31.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart32
+    chart32.options.plugins.legend.labels.color = chartOptions.color;
+    chart32.options.scales.y.ticks.color = chartOptions.color;
+    chart32.options.scales.x.ticks.color = chartOptions.color;
+
+    // chart33
+    chart33.options.plugins.legend.labels.color = chartOptions.color;
+    chart33.options.scales.y.ticks.color = chartOptions.color;
+    chart33.options.scales.x.ticks.color = chartOptions.color;
+
+    wordCloud1.options.color = chartOptions.color;
+    wordCloud2.options.color = chartOptions.color;
+
+    chart1.update();
+    chart2.update();
+    chart3.update();
+    chart4.update();
+    chart5.update();
+    chart6.update();
+    chart7.update();
+    chart8.update();
+    chart9.update();
+    chart10.update();
+    chart11.update();
+    chart12.update();
+    chart13.update();
+    chart14.update();
+    chart15.update();
+    chart16.update();
+    chart17.update();
+    chart18.update();
+    chart19.update();
+    chart20.update();
+    chart21.update();
+    chart22.update();
+    chart23.update();
+    chart24.update();
+    chart25.update();
+    chart26.update();
+    chart27.update();
+    chart28.update();
+    chart29.update();
+    chart30.update();
+    chart31.update();
+    chart32.update();
+    chart33.update();
+    wordCloud1.update();
+    wordCloud2.update();
+  }
 });
-
-// Function to update chart text color based on theme
-function updateChartTextColor(isDarkTheme) {
-  const chartOptions = {
-    color: isDarkTheme ? "#ffffff" : "#000000", // Set color based on theme
-  };
-
-  // Update chart options for both charts
-  // chart1
-  chart1.options.plugins.legend.labels.color = chartOptions.color;
-  chart1.options.scales.y.ticks.color = chartOptions.color;
-  chart1.options.scales.x.ticks.color = chartOptions.color;
-  // chart2
-  chart2.options.plugins.legend.labels.color = chartOptions.color;
-  chart2.options.scales.y.ticks.color = chartOptions.color;
-  chart2.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart3
-  chart3.options.plugins.legend.labels.color = chartOptions.color;
-  chart3.options.scales.y.ticks.color = chartOptions.color;
-  chart3.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart4
-  chart4.options.plugins.legend.labels.color = chartOptions.color;
-  chart4.options.scales.y.ticks.color = chartOptions.color;
-  chart4.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart5
-  chart5.options.plugins.legend.labels.color = chartOptions.color;
-  chart5.options.scales.y.ticks.color = chartOptions.color;
-  chart5.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart6
-  chart6.options.plugins.legend.labels.color = chartOptions.color;
-  chart6.options.scales.y.ticks.color = chartOptions.color;
-  chart6.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart7
-  chart7.options.plugins.legend.labels.color = chartOptions.color;
-  chart7.options.scales.y.ticks.color = chartOptions.color;
-  chart7.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart8
-  chart8.options.plugins.legend.labels.color = chartOptions.color;
-  chart8.options.scales.y.ticks.color = chartOptions.color;
-  chart8.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart9
-  chart9.options.plugins.legend.labels.color = chartOptions.color;
-  chart9.options.scales.y.ticks.color = chartOptions.color;
-  chart9.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart10
-  chart10.options.plugins.legend.labels.color = chartOptions.color;
-  chart10.options.scales.y.ticks.color = chartOptions.color;
-  chart10.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart11
-  chart11.options.plugins.legend.labels.color = chartOptions.color;
-  chart11.options.scales.y.ticks.color = chartOptions.color;
-  chart11.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart12
-  chart12.options.plugins.legend.labels.color = chartOptions.color;
-  chart12.options.scales.y.ticks.color = chartOptions.color;
-  chart12.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart13
-  chart13.options.plugins.legend.labels.color = chartOptions.color;
-  chart13.options.scales.y.ticks.color = chartOptions.color;
-  chart13.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart14
-  chart14.options.plugins.legend.labels.color = chartOptions.color;
-  chart14.options.scales.y.ticks.color = chartOptions.color;
-  chart14.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart15
-  chart15.options.plugins.legend.labels.color = chartOptions.color;
-  chart15.options.scales.y.ticks.color = chartOptions.color;
-  chart15.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart16
-  chart16.options.plugins.legend.labels.color = chartOptions.color;
-  chart16.options.scales.y.ticks.color = chartOptions.color;
-  chart16.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart17
-  chart17.options.plugins.legend.labels.color = chartOptions.color;
-  chart17.options.scales.y.ticks.color = chartOptions.color;
-  chart17.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart18
-  chart18.options.plugins.legend.labels.color = chartOptions.color;
-  chart18.options.scales.y.ticks.color = chartOptions.color;
-  chart18.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart19
-  chart19.options.plugins.legend.labels.color = chartOptions.color;
-  chart19.options.scales.y.ticks.color = chartOptions.color;
-  chart19.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart20
-  chart20.options.plugins.legend.labels.color = chartOptions.color;
-  chart20.options.scales.y.ticks.color = chartOptions.color;
-  chart20.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart21
-  chart21.options.plugins.legend.labels.color = chartOptions.color;
-  chart21.options.scales.y.ticks.color = chartOptions.color;
-  chart21.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart22
-  chart22.options.plugins.legend.labels.color = chartOptions.color;
-  chart22.options.scales.y.ticks.color = chartOptions.color;
-  chart22.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart23
-  chart23.options.plugins.legend.labels.color = chartOptions.color;
-  chart23.options.scales.y.ticks.color = chartOptions.color;
-  chart23.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart24
-  chart24.options.plugins.legend.labels.color = chartOptions.color;
-  chart24.options.scales.y.ticks.color = chartOptions.color;
-  chart24.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart25
-  chart25.options.plugins.legend.labels.color = chartOptions.color;
-  chart25.options.scales.y.ticks.color = chartOptions.color;
-  chart25.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart26
-  chart26.options.plugins.legend.labels.color = chartOptions.color;
-  chart26.options.scales.y.ticks.color = chartOptions.color;
-  chart26.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart27
-  chart27.options.plugins.legend.labels.color = chartOptions.color;
-  chart27.options.scales.y.ticks.color = chartOptions.color;
-  chart27.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart28
-  chart28.options.plugins.legend.labels.color = chartOptions.color;
-  chart28.options.scales.y.ticks.color = chartOptions.color;
-  chart28.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart29
-  chart29.options.plugins.legend.labels.color = chartOptions.color;
-  chart29.options.scales.y.ticks.color = chartOptions.color;
-  chart29.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart30
-  chart30.options.plugins.legend.labels.color = chartOptions.color;
-  chart30.options.scales.y.ticks.color = chartOptions.color;
-  chart30.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart31
-  chart31.options.plugins.legend.labels.color = chartOptions.color;
-  chart31.options.scales.y.ticks.color = chartOptions.color;
-  chart31.options.scales.x.ticks.color = chartOptions.color;
-
-  // chart32
-  chart32.options.plugins.legend.labels.color = chartOptions.color;
-  chart32.options.scales.y.ticks.color = chartOptions.color;
-  chart32.options.scales.x.ticks.color = chartOptions.color;
-
-  wordCloud1.options.color = chartOptions.color;
-  wordCloud2.options.color = chartOptions.color;
-
-  chart1.update();
-  chart2.update();
-  chart3.update();
-  chart4.update();
-  chart5.update();
-  chart6.update();
-  chart7.update();
-  chart8.update();
-  chart9.update();
-  chart10.update();
-  chart11.update();
-  chart12.update();
-  chart13.update();
-  chart14.update();
-  chart15.update();
-  chart16.update();
-  chart17.update();
-  chart18.update();
-  chart19.update();
-  chart20.update();
-  chart21.update();
-  chart22.update();
-  chart23.update();
-  chart24.update();
-  chart25.update();
-  chart26.update();
-  chart27.update();
-  chart28.update();
-  chart29.update();
-  chart30.update();
-  chart31.update();
-  chart32.update();
-  wordCloud1.update();
-  wordCloud2.update();
-}
