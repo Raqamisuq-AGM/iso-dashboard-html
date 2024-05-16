@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Includes all JS & CSS for the JavaScript Data Grid -->
+    <script src="./ag-grid-enterprise.js"></script>
+    <link rel="stylesheet" href="semantic.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="semantic.js"></script>
+  </head>
+  <body>
+    <!-- Your grid container -->
+    <div
+      id="myGrid"
+      style="height: 80vh; width: 80vw"
+      class="ag-theme-quartz-dark"
+    ></div>
+    <button class="ui button green primary showmodal" type="submit">
+      Grid Settings
+    </button>
+    <form class="ui modal form">
+      <h4 class="ui dividing header">Grid Settings</h4>
+      <div class="two fields">
+        <div class="field">
+          <div class="ui toggle checkbox">
+            <input
+              type="checkbox"
+              name="advanced_filtering"
+              tabindex="0"
+              class="hidden"
+            />
+            <label>Advanced Filtering</label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui toggle checkbox">
+            <input
+              type="checkbox"
+              name="rowgrouping"
+              tabindex="0"
+              class="hidden"
+            />
+            <label>Allow Grouping</label>
+          </div>
+        </div>
+      </div>
+      <div class="two fields">
+        <div class="field">
+          <div class="ui toggle checkbox">
+            <input
+              type="checkbox"
+              name="Pagenation"
+              tabindex="0"
+              class="hidden"
+            />
+            <label>Pagenation</label>
+          </div>
+        </div>
+        <div class="field">
+          <label>Page Size</label>
+          <input name="page_size" type="number" disabled min="10" max="1000" />
+        </div>
+      </div>
+      <div class="field">
+        <label> Panel </label>
+        <select multiple="" class="ui dropdown">
+          <option value="agTotalAndFilteredRowCountComponent">
+            TotalAndFilteredRowCountComponent
+          </option>
+          <option value="agTotalRowCountComponent">
+            TotalRowCountComponent
+          </option>
+          <option value="agFilteredRowCountComponent">
+            FilteredRowCountComponent
+          </option>
+          <option value="agSelectedRowCountComponent">
+            SelectedRowCountComponent
+          </option>
+          <option value="agAggregationComponent">AggregationComponent</option>
+        </select>
+      </div>
+      <button class="ui positive button labeled icon" type="button">
+        <i class="share icon"></i>
+        Apply
+      </button>
+      <button class="ui positive button labeled icon" type="button">
+        <i class="save icon"></i>
+        Save
+      </button>
+      <button class="ui reset negative button labeled icon" type="button">
+        <i class="undo icon"></i>
+        Reset
+      </button>
+    </form>
+
+    <script>
+      var get_default_gridOptions = () => {
+        return {
+          // Row Data: The data to be displayed.
+          statusBar: {
+            statusPanels: [
+              { statusPanel: "agTotalAndFilteredRowCountComponent" },
+              { statusPanel: "agTotalRowCountComponent" },
+              { statusPanel: "agFilteredRowCountComponent" },
+              { statusPanel: "agSelectedRowCountComponent" },
+              { statusPanel: "agAggregationComponent" },
+            ],
+          },
+          enableAdvancedFilter: true,
+          pagination: true,
+          paginationPageSize: 10,
+          paginationPageSizeSelector: [10, 20, 50, 100],
+          defaultColDef: {
+            editable: false,
+            filter: true,
+            enableRowGroup: true,
+            flex: 1,
+            minWidth: 190,
+          },
+          rowGroupPanelShow: "always",
+        };
+      };
+
+      var gridOptions = get_default_gridOptions();
+      document.querySelector(".showmodal").onclick = () => {
+        $(".ui.modal").modal("show");
+      };
+      $(".ui.dropdown").dropdown({
+        clearable: true,
+        placeholder: "any",
+      });
+      $(".ui.checkbox").checkbox();
+
+      document.querySelector('input[name="advanced_filtering"]').onchange = (
+        event
+      ) => {
+        console.log(
+          "Changed Value of advanced_filtering",
+          document.querySelector('input[name="advanced_filtering"]').checked
+        );
+        grid.setGridOption(
+          "enableAdvancedFilter",
+          document.querySelector('input[name="advanced_filtering"]').checked
+        );
+      };
+      document.querySelector('input[name="rowgrouping"]').onchange = (
+        event
+      ) => {
+        gridOptions.defaultColDef.enableRowGroup = document.querySelector(
+          'input[name="rowgrouping"]'
+        ).checked;
+        gridOptions.rowGroupPanelShow = document.querySelector(
+          'input[name="rowgrouping"]'
+        ).checked
+          ? "always"
+          : "never";
+        grid.updateGridOptions(gridOptions);
+        console.log(
+          "Changed Value of rowgrouping",
+          document.querySelector('input[name="rowgrouping"]').checked
+        );
+      };
+      document.querySelector('input[name="page_size"]').disabled =
+        !document.querySelector('input[name="Pagenation"]').checked;
+      document.querySelector('input[name="Pagenation"]').onchange = (event) => {
+        document.querySelector('input[name="page_size"]').disabled =
+          !document.querySelector('input[name="Pagenation"]').checked;
+        gridOptions.pagination = document.querySelector(
+          'input[name="Pagenation"]'
+        ).checked;
+        grid.updateGridOptions(gridOptions);
+      };
+      document.querySelector('input[name="page_size"]').onchange = (event) => {
+        console.log(event);
+        console.log(gridOptions.paginationPageSize);
+        gridOptions.pagination = document.querySelector(
+          'input[name="Pagenation"]'
+        ).checked;
+        if (document.querySelector('input[name="Pagenation"]').checked) {
+          var multipliers = [1, 2, 5, 10];
+          gridOptions.paginationPageSizeSelector = multipliers.map(
+            (i) => document.querySelector('input[name="page_size"]').value * i
+          );
+
+          gridOptions.paginationPageSize = parseInt(
+            document.querySelector('input[name="page_size"]').value
+          );
+        }
+        grid.updateGridOptions(gridOptions);
+      };
+
+      document.querySelector(".ui.dropdown").onchange = () => {
+        const values = [...document.querySelector(".ui.dropdown").children]
+          .map((x) => x.dataset.value)
+          .filter((x) => x !== undefined)
+          .map((value) => {
+            return { statusPanel: value };
+          });
+        gridOptions.statusBar.statusPanels = values;
+        grid.updateGridOptions(gridOptions);
+        console.log(values);
+      };
+      document.querySelector(".reset.button.ui").onclick = () => {
+        console.log("clicked reset button");
+        gridOptions = get_default_gridOptions();
+        grid.updateGridOptions(gridOptions);
+      };
+
+      const myGridElement = document.querySelector("#myGrid");
+      var grid = agGrid.createGrid(myGridElement, gridOptions);
+      var update_grid = (raw_data) => {
+        if (raw_data.length > 0) {
+          gridOptions.columnDefs = Object.keys(raw_data[0]).map((x) => {
+            return { field: x };
+          });
+          gridOptions.rowData = raw_data;
+
+          grid.updateGridOptions(gridOptions);
+        } else {
+          alert("No Data Found");
+          return;
+        }
+      };
+      fetch("https://my.api.mockaroo.com/country.json?key=f179d3d0")
+        .then((json) => json.json())
+        .then((json) => update_grid(json));
+    </script>
+  </body>
+</html>
