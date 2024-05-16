@@ -4,13 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ISO Dashboard</title>
-    <link rel="shortcut icon" href="OIP.jfif" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
-    <link rel="stylesheet" href="bootstrap-5.0.2.min.css" />
+    <link rel="shortcut icon" href="/assets/img/OIP.jfif" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-5.0.2.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -18,16 +14,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    /> -->
-    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/assets/css/remixicon.css" />
+
+    <!-- AG Grid -->
+    <script src="/assets/js/agGrid/ag-grid-enterprise.js"></script>
+    <link rel="stylesheet" href="/assets/js/agGrid/semantic.css" />
+    <link rel="stylesheet" href="/assets/js/agGrid/main.css" />
+    <script src="/assets/js/agGrid/jquery-3.1.1.min.js"></script>
+    <script src="/assets/js/agGrid/semantic.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body class="dark-theme">
     <!-- Slider Items -->
@@ -44,7 +40,6 @@
                       class="bg-white"
                       style="
                         height: 75%;
-                        /* margin: 60px; */
                         padding: 35px 0px;
                         border: 1px solid rgba(0, 0, 0, 0.125);
                         border-radius: 0.25rem;
@@ -55,14 +50,14 @@
                     >
                       <div>
                         <img
-                          src="saudi-aramco-logo.png"
+                          src="/assets/img/saudi-aramco-logo.png"
                           alt=""
                           style="width: 75%; margin-top: -15px"
                         />
                       </div>
                       <div>
                         <img
-                          src="id card image.jpeg"
+                          src="/assets/img/id card image.jpeg"
                           alt=""
                           style="width: 35%; height: 115px; margin-top: 10px"
                         />
@@ -173,7 +168,7 @@
                                   class="text-start plate-grid-item vertical-item"
                                 >
                                   <img
-                                    src="download.jpg"
+                                    src="/assets/img/download.jpg"
                                     width="15px"
                                     height="15px"
                                     style="
@@ -252,7 +247,7 @@
                                   class="text-start plate-grid-item vertical-item"
                                 >
                                   <img
-                                    src="download.jpg"
+                                    src="/assets/img/download.jpg"
                                     width="15px"
                                     height="15px"
                                     style="
@@ -331,7 +326,7 @@
                                   class="text-start plate-grid-item vertical-item"
                                 >
                                   <img
-                                    src="download.jpg"
+                                    src="/assets/img/download.jpg"
                                     width="15px"
                                     height="15px"
                                     style="
@@ -375,7 +370,11 @@
                     </div>
                     <div class="col-md-6">
                       <div class="card card-wrapper" style="height: 30vh">
-                        <img src="my.png" alt="" style="height: 100%" />
+                        <img
+                          src="/assets/img/my.png"
+                          alt=""
+                          style="height: 100%"
+                        />
                       </div>
                     </div>
                     <div class="col-md-6">
@@ -574,7 +573,7 @@
                         class="card card-wrapper chart-img p-4 mt-4"
                         style="height: 47vh"
                       >
-                        <img src="id.jpg" alt="" />
+                        <img src="/assets/img/id.jpg" alt="" />
                         <h6 style="margin-top: 10px !important">500</h6>
                         <h6>Employees</h6>
                       </div>
@@ -584,7 +583,7 @@
                         class="card card-wrapper chart-img p-4 mt-4"
                         style="height: 47vh"
                       >
-                        <img src="id.jpg" alt="" />
+                        <img src="/assets/img/id.jpg" alt="" />
                         <h6 style="margin-top: 10px !important">260</h6>
                         <h6>SMPS</h6>
                       </div>
@@ -594,7 +593,7 @@
                         class="card card-wrapper chart-img p-4 mt-4"
                         style="height: 47vh"
                       >
-                        <img src="id.jpg" alt="" />
+                        <img src="/assets/img/id.jpg" alt="" />
                         <h6 style="margin-top: 10px !important">500</h6>
                         <h6>Contractors</h6>
                       </div>
@@ -1446,14 +1445,14 @@
               >
                 <div>
                   <img
-                    src="saudi-aramco-logo.png"
+                    src="/assets/img/saudi-aramco-logo.png"
                     alt=""
                     style="width: 75%; margin-top: -15px"
                   />
                 </div>
                 <div>
                   <img
-                    src="id card image.jpeg"
+                    src="/assets/img/id card image.jpeg"
                     alt=""
                     style="width: 35%; height: 115px; margin-top: 10px"
                   />
@@ -1550,7 +1549,7 @@
                           </div>
                           <div class="text-start plate-grid-item vertical-item">
                             <img
-                              src="download.jpg"
+                              src="/assets/img/download.jpg"
                               width="30px"
                               height="30px"
                               style="
@@ -1622,7 +1621,7 @@
                           </div>
                           <div class="text-start plate-grid-item vertical-item">
                             <img
-                              src="download.jpg"
+                              src="/assets/img/download.jpg"
                               width="30px"
                               height="30px"
                               style="
@@ -1694,7 +1693,7 @@
                           </div>
                           <div class="text-start plate-grid-item vertical-item">
                             <img
-                              src="download.jpg"
+                              src="/assets/img/download.jpg"
                               width="30px"
                               height="30px"
                               style="
@@ -1742,7 +1741,7 @@
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 >
-                  <img src="my.png" alt="" style="height: 100%" />
+                  <img src="/assets/img/my.png" alt="" style="height: 100%" />
                 </div>
               </div>
               <div class="col-md-6">
@@ -1921,7 +1920,7 @@
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 >
-                  <img src="id.jpg" alt="" />
+                  <img src="/assets/img/id.jpg" alt="" />
                 </div>
               </div>
               <div class="col-md-4">
@@ -1930,7 +1929,7 @@
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 >
-                  <img src="id.jpg" alt="" />
+                  <img src="/assets/img/id.jpg" alt="" />
                 </div>
               </div>
               <div class="col-md-4">
@@ -1939,7 +1938,7 @@
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 >
-                  <img src="id.jpg" alt="" />
+                  <img src="/assets/img/id.jpg" alt="" />
                 </div>
               </div>
             </div>
@@ -2640,6 +2639,14 @@
         <div class="modal-content">
           <div class="modal-header">
             <button
+              class="ui button green primary"
+              data-bs-toggle="modal"
+              data-bs-target="#agGridFormModal"
+            >
+              Grid Settings
+            </button>
+            <button class="ui button green primary">Export</button>
+            <button
               type="button"
               class="btn-close btn-close-white"
               data-bs-dismiss="modal"
@@ -2648,18 +2655,121 @@
             ></button>
           </div>
           <div class="modal-body">
-            <div class="agGrid">
-              <div
-                id="myGrid"
-                class="ag-theme-quartz"
-                style="height: 200px; width: 700px"
-              ></div>
-            </div>
+            <div
+              id="myGrid"
+              style="height: 80vh; width: 80vw"
+              class="ag-theme-quartz-dark"
+            ></div>
           </div>
-          <div class="modal-footer">
-            <button class="btn btn-primary analyze-data">
-              Click here to analyze data
-            </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ag Grid Form -->
+    <div
+      class="modal fade"
+      id="agGridFormModal"
+      tabindex="-1"
+      aria-labelledby="agGridFormModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" id="agGrid-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              id="modal-close-btn"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="ui modal form">
+              <h4 class="ui dividing header">Grid Settings</h4>
+              <div class="two fields">
+                <div class="field">
+                  <div class="ui toggle checkbox">
+                    <input
+                      type="checkbox"
+                      name="advanced_filtering"
+                      tabindex="0"
+                      class="hidden"
+                    />
+                    <label>Advanced Filtering</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="ui toggle checkbox">
+                    <input
+                      type="checkbox"
+                      name="rowgrouping"
+                      tabindex="0"
+                      class="hidden"
+                    />
+                    <label>Allow Grouping</label>
+                  </div>
+                </div>
+              </div>
+              <div class="two fields">
+                <div class="field">
+                  <div class="ui toggle checkbox">
+                    <input
+                      type="checkbox"
+                      name="Pagenation"
+                      tabindex="0"
+                      class="hidden"
+                    />
+                    <label>Pagenation</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <label>Page Size</label>
+                  <input
+                    name="page_size"
+                    type="number"
+                    disabled
+                    min="10"
+                    max="1000"
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <label> Panel </label>
+                <select multiple="" class="ui dropdown">
+                  <option value="agTotalAndFilteredRowCountComponent">
+                    TotalAndFilteredRowCountComponent
+                  </option>
+                  <option value="agTotalRowCountComponent">
+                    TotalRowCountComponent
+                  </option>
+                  <option value="agFilteredRowCountComponent">
+                    FilteredRowCountComponent
+                  </option>
+                  <option value="agSelectedRowCountComponent">
+                    SelectedRowCountComponent
+                  </option>
+                  <option value="agAggregationComponent">
+                    AggregationComponent
+                  </option>
+                </select>
+              </div>
+              <button class="ui positive button labeled icon" type="button">
+                <i class="share icon"></i>
+                Apply
+              </button>
+              <button class="ui positive button labeled icon" type="button">
+                <i class="save icon"></i>
+                Save
+              </button>
+              <button
+                class="ui reset negative button labeled icon"
+                type="button"
+              >
+                <i class="undo icon"></i>
+                Reset
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -2761,12 +2871,146 @@
     </div>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-wordcloud"></script>
-    <script src="bootstrap-5.0.2.min.js"></script>
-    <script src="./script.js"></script>
-    <script src="./responsive-chart.js"></script>
-    <script src="./agrid.js"></script>
+    <script src="/assets/js/bootstrap-5.0.2.min.js"></script>
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <!-- <script src="/assets/js/ag-grid-community.min.js"></script> -->
+    <script src="/assets/js/chart.js"></script>
+    <script src="/assets/js/chartjs-chart-wordcloud.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/responsive-chart.js"></script>
+    <!-- <script src="/assets/js/agrid.js"></script> -->
+
+    <script>
+      var get_default_gridOptions = () => {
+        return {
+          // Row Data: The data to be displayed.
+          statusBar: {
+            statusPanels: [
+              { statusPanel: "agTotalAndFilteredRowCountComponent" },
+              { statusPanel: "agTotalRowCountComponent" },
+              { statusPanel: "agFilteredRowCountComponent" },
+              { statusPanel: "agSelectedRowCountComponent" },
+              { statusPanel: "agAggregationComponent" },
+            ],
+          },
+          enableAdvancedFilter: true,
+          pagination: true,
+          paginationPageSize: 10,
+          paginationPageSizeSelector: [10, 20, 50, 100],
+          defaultColDef: {
+            editable: false,
+            filter: true,
+            enableRowGroup: true,
+            flex: 1,
+            minWidth: 190,
+          },
+          rowGroupPanelShow: "always",
+        };
+      };
+
+      var gridOptions = get_default_gridOptions();
+      // document.querySelector(".showmodal").onclick = () => {
+      //   $(".ui.modal").modal("show");
+      // };
+      $(".ui.dropdown").dropdown({
+        clearable: true,
+        placeholder: "any",
+      });
+      $(".ui.checkbox").checkbox();
+
+      document.querySelector('input[name="advanced_filtering"]').onchange = (
+        event
+      ) => {
+        console.log(
+          "Changed Value of advanced_filtering",
+          document.querySelector('input[name="advanced_filtering"]').checked
+        );
+        grid.setGridOption(
+          "enableAdvancedFilter",
+          document.querySelector('input[name="advanced_filtering"]').checked
+        );
+      };
+      document.querySelector('input[name="rowgrouping"]').onchange = (
+        event
+      ) => {
+        gridOptions.defaultColDef.enableRowGroup = document.querySelector(
+          'input[name="rowgrouping"]'
+        ).checked;
+        gridOptions.rowGroupPanelShow = document.querySelector(
+          'input[name="rowgrouping"]'
+        ).checked
+          ? "always"
+          : "never";
+        grid.updateGridOptions(gridOptions);
+        console.log(
+          "Changed Value of rowgrouping",
+          document.querySelector('input[name="rowgrouping"]').checked
+        );
+      };
+      document.querySelector('input[name="page_size"]').disabled =
+        !document.querySelector('input[name="Pagenation"]').checked;
+      document.querySelector('input[name="Pagenation"]').onchange = (event) => {
+        document.querySelector('input[name="page_size"]').disabled =
+          !document.querySelector('input[name="Pagenation"]').checked;
+        gridOptions.pagination = document.querySelector(
+          'input[name="Pagenation"]'
+        ).checked;
+        grid.updateGridOptions(gridOptions);
+      };
+      document.querySelector('input[name="page_size"]').onchange = (event) => {
+        console.log(event);
+        console.log(gridOptions.paginationPageSize);
+        gridOptions.pagination = document.querySelector(
+          'input[name="Pagenation"]'
+        ).checked;
+        if (document.querySelector('input[name="Pagenation"]').checked) {
+          var multipliers = [1, 2, 5, 10];
+          gridOptions.paginationPageSizeSelector = multipliers.map(
+            (i) => document.querySelector('input[name="page_size"]').value * i
+          );
+
+          gridOptions.paginationPageSize = parseInt(
+            document.querySelector('input[name="page_size"]').value
+          );
+        }
+        grid.updateGridOptions(gridOptions);
+      };
+
+      document.querySelector(".ui.dropdown").onchange = () => {
+        const values = [...document.querySelector(".ui.dropdown").children]
+          .map((x) => x.dataset.value)
+          .filter((x) => x !== undefined)
+          .map((value) => {
+            return { statusPanel: value };
+          });
+        gridOptions.statusBar.statusPanels = values;
+        grid.updateGridOptions(gridOptions);
+        console.log(values);
+      };
+      document.querySelector(".reset.button.ui").onclick = () => {
+        console.log("clicked reset button");
+        gridOptions = get_default_gridOptions();
+        grid.updateGridOptions(gridOptions);
+      };
+
+      const myGridElement = document.querySelector("#myGrid");
+      var grid = agGrid.createGrid(myGridElement, gridOptions);
+      var update_grid = (raw_data) => {
+        if (raw_data.length > 0) {
+          gridOptions.columnDefs = Object.keys(raw_data[0]).map((x) => {
+            return { field: x };
+          });
+          gridOptions.rowData = raw_data;
+
+          grid.updateGridOptions(gridOptions);
+        } else {
+          alert("No Data Found");
+          return;
+        }
+      };
+      fetch("https://my.api.mockaroo.com/country.json?key=f179d3d0")
+        .then((json) => json.json())
+        .then((json) => update_grid(json));
+    </script>
   </body>
 </html>
