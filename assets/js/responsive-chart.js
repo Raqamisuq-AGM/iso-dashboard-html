@@ -1163,7 +1163,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   const ctx = document.querySelector(".canvasCtx").getContext("2d");
-  const chart = new Chart(ctx, {
+  new Chart(ctx, {
     type: "wordCloud",
     data: {
       labels: word4.map((d) => d.key),
