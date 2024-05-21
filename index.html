@@ -551,13 +551,35 @@
         <div class="swiper-slide">
           <section class="d-flex justify-content-center">
             <div class="w-85">
+              <div class="row mt-3">
+                <div class="col-md-6">
+                  <select
+                    name=""
+                    id=""
+                    style="float: left; margin-bottom: 25px"
+                    class="btn btn-primary"
+                  >
+                    <option value="">Org</option>
+                    <option value="3000912">3000912</option>
+                    <option value="300929">300929</option>
+                    <option value="300638">300638</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex flex-row-reverse">
+                    <a class="btn btn-primary" href="#">Yearly</a>
+                    <a class="btn btn-primary mx-2" href="#">Monthly</a>
+                    <a class="btn btn-primary mx-2" href="#">Weekly</a>
+                  </div>
+                </div>
+              </div>
               <div class="row">
                 <div class="col-md-6">
                   <div class="row">
                     <div class="col-md-6">
                       <div
                         class="card card-wrapper p-4"
-                        style="height: 45vh"
+                        style="height: 40vh"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal"
                       >
@@ -568,7 +590,7 @@
                     <div class="col-md-6">
                       <div
                         class="card card-wrapper p-5"
-                        style="height: 45vh"
+                        style="height: 40vh"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal"
                       >
@@ -642,7 +664,7 @@
                         <div class="col-md-12">
                           <div
                             class="card card-wrapper p-4 mt-3"
-                            style="height: 30vh"
+                            style="height: 25vh"
                           >
                             <h5>120</h5>
                             <h6 class="mt-1">VMX</h6>
@@ -675,7 +697,7 @@
                         <div class="col-md-12">
                           <div
                             class="card card-wrapper p-4 mt-3"
-                            style="height: 30vh"
+                            style="height: 25vh"
                           >
                             <h5>155</h5>
                             <h6 class="mt-1">MGPS</h6>
@@ -705,8 +727,11 @@
                       class="chart"
                       style="height: 100%; width: 100%"
                     >
-                    <h5>Top plant codes/groups by who has access to them (in a better name)</h5>
-                      <canvas class="chart canvas1"></canvas>
+                      <!-- <h5>
+                        Top plant codes/groups by who has access to them (in a
+                        better name)
+                      </h5> -->
+                      <canvas class="chart canvas1" style="height: 495px !important;"></canvas>
                     </div>
                   </div>
                 </div>
@@ -726,10 +751,12 @@
                           >
                             <h5>1,001</h5>
                             <h6 class="mt-1">currently in</h6>
-                            <h5 class="mt-1" style="color: #000;">People have access</h5>
+                            <h5 class="mt-1" style="color: #000">
+                              People have access
+                            </h5>
                           </div>
                         </div>
-                        
+
                         <div class="col-md-12">
                           <div
                             class="card card-wrapper p-4 mt-3"
@@ -766,7 +793,7 @@
                             <canvas class="Chart10 mt-2"></canvas>
                           </div>
                         </div>
-                        
+
                         <div class="col-md-12">
                           <div
                             class="card card-wrapper p-4 mt-3"
@@ -3035,7 +3062,7 @@
 
           grid.updateGridOptions(gridOptions);
         } else {
-          alert("No Data Found");
+          // alert("No Data Found");
           return;
         }
       };
