@@ -193,6 +193,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const ctx31 = document.querySelector(".Chart31");
   const ctx32 = document.querySelector(".Chart32");
   const ctx33 = document.querySelector(".Chart33");
+  const ctx34 = document.querySelector(".Chart34");
   const ct = document.querySelector(".canvas1").getContext("2d");
   const ctx = document.querySelector(".canvas").getContext("2d");
 
@@ -1525,6 +1526,47 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+
+    // Generate Chart 10
+    const chart34 = new Chart(ctx34, {
+      type: "doughnut",
+      data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [
+          {
+            label: "# of Votes",
+            data: [12, 19, 3, 5, 2, 3],
+            borderWidth: 1,
+          },
+        ],
+      },
+      options: {
+        plugins: {
+          legend: {
+            labels: {
+              color: isDarkTheme ? "white" : "#000", // set legend text color to white
+            },
+          },
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              color: isDarkTheme ? "white" : "#000", // set y-axis labels color to white
+            },
+          },
+          x: {
+            ticks: {
+              color: isDarkTheme ? "white" : "#000", // set x-axis labels color to white
+            },
+          },
+        },
+        tooltips: {
+          bodyColor: isDarkTheme ? "white" : "#000", // set tooltip text color to white
+        },
+      },
+    });
+
   // Generate WordCloud Chart 1
   const words1 = [
     { key: "word", value: 10 },
@@ -2156,6 +2198,11 @@ document.addEventListener("DOMContentLoaded", function () {
     chart33.options.scales.y.ticks.color = chartOptions.color;
     chart33.options.scales.x.ticks.color = chartOptions.color;
 
+    // chart34
+    chart34.options.plugins.legend.labels.color = chartOptions.color;
+    chart34.options.scales.y.ticks.color = chartOptions.color;
+    chart34.options.scales.x.ticks.color = chartOptions.color;
+
     wordCloud1.options.color = chartOptions.color;
     wordCloud2.options.color = chartOptions.color;
 
@@ -2192,6 +2239,7 @@ document.addEventListener("DOMContentLoaded", function () {
     chart31.update();
     chart32.update();
     chart33.update();
+    chart34.update();
     wordCloud1.update();
     wordCloud2.update();
   }

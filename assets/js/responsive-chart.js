@@ -931,31 +931,30 @@ document.addEventListener("DOMContentLoaded", function () {
     { key: "block", value: 1 },
   ];
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const ct = document.querySelector(".canvasCtx1").getContext("2d");
-    new Chart(ct, {
-      type: "wordCloud",
-      data: {
-        labels: words3.map((d) => d.key),
-        datasets: [
-          {
-            label: "",
-            data: words1.map((d) => 10 + d.value * 4),
-          },
-        ],
+  const ct = document.querySelector(".canvasCtx1").getContext("2d");
+  new Chart(ct, {
+    type: "wordCloud",
+    data: {
+      labels: words3.map((d) => d.key),
+      datasets: [
+        {
+          label: "",
+          data: words3.map((d) => 10 + d.value * 4),
+        },
+      ],
+    },
+    options: {
+      title: {
+        display: false,
+        text: "Chart.js Word Cloud",
       },
-      options: {
-        title: {
+      plugins: {
+        legend: {
           display: false,
-          text: "Chart.js Word Cloud",
-        },
-        plugins: {
-          legend: {
-            display: false,
-          },
         },
       },
-    });
+      color: "#ffffff",
+    },
   });
 
   // Generate WordCloud Chart 2
@@ -1163,30 +1162,29 @@ document.addEventListener("DOMContentLoaded", function () {
     { key: "block", value: 1 },
   ];
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const ctx = document.querySelector(".canvasCtx").getContext("2d");
-    const chart = new Chart(ctx, {
-      type: "wordCloud",
-      data: {
-        labels: word4.map((d) => d.key),
-        datasets: [
-          {
-            label: "",
-            data: word4.map((d) => 10 + d.value * 10),
-          },
-        ],
+  const ctx = document.querySelector(".canvasCtx").getContext("2d");
+  const chart = new Chart(ctx, {
+    type: "wordCloud",
+    data: {
+      labels: word4.map((d) => d.key),
+      datasets: [
+        {
+          label: "",
+          data: word4.map((d) => 10 + d.value * 10),
+        },
+      ],
+    },
+    options: {
+      title: {
+        display: false,
+        text: "Chart.js Word Cloud",
       },
-      options: {
-        title: {
+      plugins: {
+        legend: {
           display: false,
-          text: "Chart.js Word Cloud",
-        },
-        plugins: {
-          legend: {
-            display: false,
-          },
         },
       },
-    });
+      color: "#ffffff",
+    },
   });
 });
