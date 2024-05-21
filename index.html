@@ -2638,13 +2638,13 @@
       <div class="modal-dialog modal-dialog-centered" id="agGrid-modal">
         <div class="modal-content">
           <div class="modal-header">
-            <button
+            <!-- <button
               class="ui button green primary"
               data-bs-toggle="modal"
               data-bs-target="#agGridFormModal"
             >
               Grid Settings
-            </button>
+            </button> -->
             <button class="ui button green primary">Export</button>
             <button
               type="button"
@@ -2853,7 +2853,16 @@
         <ul>
           <li class="icons"><i class="fa-solid fa-moon"></i></li>
           <li class="icons2"><i class="fa-solid fa-sun"></i></li>
-          <li style="font-size: 1.5rem">Grid Setting</li>
+          <li style="font-size: 1.5rem">
+            <button
+              class="ui button "
+              data-bs-toggle="modal"
+              data-bs-target="#agGridFormModal"
+              style="width: fit-content;"
+            >
+              Grid Settings
+            </button>
+          </li>
           <li style="font-size: 1.5rem">Email Setting</li>
           <li class="mt-5" style="font-size: 1.5rem">
             Email:
