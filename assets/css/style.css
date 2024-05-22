@@ -97,6 +97,18 @@ body {
   font-size: 18px;
 }
 
+.table th, .table tr {
+  border-bottom: 1px solid #000;
+}
+
+.table td {
+  padding: 0 !important;
+}
+
+.table tr:last-child{
+  border-bottom: none !important;
+}
+
 .slider-name {
   writing-mode: vertical-rl;
   text-orientation: mixed;

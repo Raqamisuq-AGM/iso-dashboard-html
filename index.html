@@ -1046,32 +1046,31 @@
                 <div class="col-md-4">
                   <div class="row">
                     <div class="col-12">
-                      <div
-                        class="card card-wrapper p-4"
-                        style="height: 45vh"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
-                      >
-                        <h6>Top 25% visiting individuals</h6>
-                        <div class="d-flex justify-content-between w-100 mt-3">
-                          <h5>Name</h5>
-                          <h5>#</h5>
-                        </div>
-                        <div class="d-flex justify-content-between w-100">
-                          <h6 class="mt-2">Saleh</h6>
-                          <h6 class="mt-2">50</h6>
-                        </div>
-                        <div class="d-flex justify-content-between w-100">
-                          <h6 class="mt-2">ALi</h6>
-                          <h6 class="mt-2">15</h6>
-                        </div>
-                        <div class="d-flex justify-content-between w-100">
-                          <h6 class="mt-2">Sohaib</h6>
-                          <h6 class="mt-2">3</h6>
-                        </div>
-                        <div class="d-flex justify-content-between w-100">
-                          <h6 class="mt-2">Faisal</h6>
-                          <h6 class="mt-2">1</h6>
+                      <div class="card card-wrapper p-4" style="height: 45vh" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h6 class="text-center mb-4">Top 25% visiting individuals</h6>
+                        <div class="table-responsive table-container" style="width: 100%;margin-top: -20px;">
+                          <table class="table text-center mb-0 w-100">
+                            <thead>
+                              <tr>
+                                <th scope="col" style="font-size: 25px;">Name</th>
+                                <th scope="col">#</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Saleh</td>
+                                <td>50</td>
+                              </tr>
+                              <tr>
+                                <td>ALi</td>
+                                <td>15</td>
+                              </tr>
+                              <tr>
+                                <td>Sohaib</td>
+                                <td>1</td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
                     </div>
@@ -2835,7 +2834,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <span style="font-size: 30px;">Login</span>
+            <span style="font-size: 30px">Login</span>
             <button
               type="button"
               class="btn-close btn-close-white"
@@ -2847,7 +2846,7 @@
           <div class="modal-body">
             <form class="ui form">
               <div class="field">
-                <label for="email" style="font-size: 30px;">Email</label>
+                <label for="email" style="font-size: 30px">Email</label>
                 <div class="ui left icon input">
                   <i class="envelope icon"></i>
                   <input
@@ -2858,7 +2857,7 @@
                 </div>
               </div>
               <div class="field">
-                <label for="password" style="font-size: 30px;">Password</label>
+                <label for="password" style="font-size: 30px">Password</label>
                 <div class="ui left icon input">
                   <i class="key icon"></i>
                   <input type="password" id="password" placeholder="******" />
@@ -2867,12 +2866,16 @@
               <div class="two fields">
                 <div class="field">
                   <div class="ui checkbox">
-                    <input type="checkbox" id="rememberMe">
-                    <label for="rememberMe" style="font-size: 25px;margin-left: 0 !important;">Remember me</label>
+                    <input type="checkbox" id="rememberMe" />
+                    <label
+                      for="rememberMe"
+                      style="font-size: 25px; margin-left: 0 !important"
+                      >Remember me</label
+                    >
                   </div>
                 </div>
-                <div class="field" style="text-align: right;">
-                  <a href="#" style="font-size: 25px;">Forget password?</a>
+                <div class="field" style="text-align: right">
+                  <a href="#" style="font-size: 25px">Forget password?</a>
                 </div>
               </div>
               <div class="field">
