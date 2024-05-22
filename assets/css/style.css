@@ -97,6 +97,15 @@ body {
   font-size: 18px;
 }
 
+.slider-name {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  padding-right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .w-85 {
   width: 85%;
 }
