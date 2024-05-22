@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let customizerCloseBtn = document.querySelector(".close-customizer");
   let customizer = document.querySelector(".customizer");
   let bodyDropShadow = document.querySelector(".body-drop-shadow");
-  let emailLogin = document.querySelector(".email-login");
+  // let emailLogin = document.querySelector(".email-login");
   customizerBtn.addEventListener("click", () => {
     bodyDropShadow.style.display = "block";
     customizer.style.transform = "translateX(0)";
@@ -71,10 +71,10 @@ document.addEventListener("DOMContentLoaded", function () {
     customizer.style.transform = "translateX(-1000px)";
   });
 
-  emailLogin.addEventListener("click", () => {
-    bodyDropShadow.style.display = "none";
-    customizer.style.transform = "translateX(-1000px)";
-  });
+  // emailLogin.addEventListener("click", () => {
+  //   bodyDropShadow.style.display = "none";
+  //   customizer.style.transform = "translateX(-1000px)";
+  // });
 
   const card = document.querySelector(".card-wrapper");
 
@@ -441,11 +441,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const chart7 = new Chart(ctx7, {
     type: "doughnut",
     data: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["Red", "Blue"],
       datasets: [
         {
           label: "# of Votes",
-          data: [12, 19, 3, 5, 2, 3],
+          data: [12, 19],
           borderWidth: 1,
         },
       ],
@@ -481,11 +481,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const chart8 = new Chart(ctx8, {
     type: "doughnut",
     data: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["Red", "Blue"],
       datasets: [
         {
           label: "# of Votes",
-          data: [12, 19, 3, 5, 2, 3],
+          data: [12, 19],
           borderWidth: 1,
         },
       ],
@@ -521,11 +521,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const chart9 = new Chart(ctx9, {
     type: "doughnut",
     data: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["Red", "Blue"],
       datasets: [
         {
           label: "# of Votes",
-          data: [12, 19, 3, 5, 2, 3],
+          data: [12, 19],
           borderWidth: 1,
         },
       ],
@@ -561,11 +561,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const chart10 = new Chart(ctx10, {
     type: "doughnut",
     data: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["Red", "Blue"],
       datasets: [
         {
           label: "# of Votes",
-          data: [12, 19, 3, 5, 2, 3],
+          data: [12, 19],
           borderWidth: 1,
         },
       ],
@@ -601,12 +601,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const chart11 = new Chart(ctx11, {
     type: "bar",
     data: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["Red", "Blue"],
       datasets: [
         {
           axis: "y",
           label: "# of Votes",
-          data: [12, 19, 3, 5, 2, 3],
+          data: [12, 19],
           borderWidth: 1,
         },
       ],
@@ -683,12 +683,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const chart13 = new Chart(ctx13, {
     type: "doughnut",
     data: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["Red", "Blue"],
       datasets: [
         {
           axis: "y",
           label: "# of Votes",
-          data: [12, 19, 3, 5, 2, 3],
+          data: [12, 19],
           borderWidth: 1,
         },
       ],
@@ -847,12 +847,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const chart17 = new Chart(ctx17, {
     type: "doughnut",
     data: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["Red", "Blue"],
       datasets: [
         {
           axis: "y",
           label: "# of Votes",
-          data: [12, 19, 3, 5, 2, 3],
+          data: [12, 19],
           borderWidth: 1,
         },
       ],
@@ -1290,12 +1290,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const chart28 = new Chart(ctx28, {
     type: "doughnut",
     data: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["Red", "Blue"],
       datasets: [
         {
           axis: "y",
           label: "# of Votes",
-          data: [12, 19, 3, 5, 2, 3],
+          data: [12, 19],
           borderWidth: 1,
         },
       ],
@@ -1330,12 +1330,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const chart29 = new Chart(ctx29, {
     type: "doughnut",
     data: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["Red", "Blue"],
       datasets: [
         {
           axis: "y",
           label: "# of Votes",
-          data: [12, 19, 3, 5, 2, 3],
+          data: [12, 19],
           borderWidth: 1,
         },
       ],
@@ -1370,12 +1370,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const chart30 = new Chart(ctx30, {
     type: "doughnut",
     data: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["Red", "Blue"],
       datasets: [
         {
           axis: "y",
           label: "# of Votes",
-          data: [12, 19, 3, 5, 2, 3],
+          data: [12, 19],
           borderWidth: 1,
         },
       ],
@@ -1531,11 +1531,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const chart34 = new Chart(ctx34, {
     type: "doughnut",
     data: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["Red", "Blue"],
       datasets: [
         {
           label: "# of Votes",
-          data: [12, 19, 3, 5, 2, 3],
+          data: [12, 19],
           borderWidth: 1,
         },
       ],
