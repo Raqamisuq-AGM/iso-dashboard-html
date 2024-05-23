@@ -94,6 +94,8 @@ document.addEventListener("DOMContentLoaded", function () {
   card.addEventListener("mouseenter", addAttributes);
   card.addEventListener("mouseleave", removeAttributes);
 
+  // AOS.init();
+
   let swiper = new Swiper(".swiper", {
     pagination: {
       el: ".swiper-pagination",
@@ -115,6 +117,16 @@ document.addEventListener("DOMContentLoaded", function () {
     direction: "horizontal",
     mousewheel: true,
     slidePreView: 1,
+  });
+
+  swiper.on('slideChange', function () {
+    const sliderNames = document.querySelectorAll('.slider-name'); // Select all
+  
+    sliderNames.forEach(sliderName => {
+      sliderName.style.animation = 'none'; // Reset animation
+      void sliderName.offsetWidth; // Trigger reflow
+      sliderName.style.animation = 'slide-up 0.5s ease-in-out forwards'; // Restart animation
+    });
   });
 
   // Get all elements with the card class
