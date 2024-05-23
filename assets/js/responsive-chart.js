@@ -781,8 +781,8 @@ document.addEventListener("DOMContentLoaded", function () {
     { key: "17H61", value: 4 },
   ];
 
-  const ct = document.querySelector(".canvasCtx1").getContext("2d");
-  new Chart(ct, {
+  const ctMob = document.querySelector(".canvasCtx1").getContext("2d");
+  new Chart(ctMob, {
     type: "wordCloud",
     data: {
       labels: words3.map((d) => d.key),
@@ -803,7 +803,7 @@ document.addEventListener("DOMContentLoaded", function () {
           display: false,
         },
       },
-      color: "#ffffff",
+      color: "#000",
     },
   });
 
@@ -862,8 +862,8 @@ document.addEventListener("DOMContentLoaded", function () {
     { key: "17H61", value: 4 },
   ];
 
-  const ctx = document.querySelector(".canvasCtx").getContext("2d");
-  new Chart(ctx, {
+  const ctxMob = document.querySelector(".canvasCtx").getContext("2d");
+  new Chart(ctxMob, {
     type: "wordCloud",
     data: {
       labels: word4.map((d) => d.key),
@@ -884,7 +884,7 @@ document.addEventListener("DOMContentLoaded", function () {
           display: false,
         },
       },
-      color: "#ffffff",
+      color: "#000",
     },
   });
 });
